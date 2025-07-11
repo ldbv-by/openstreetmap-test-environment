@@ -2,13 +2,12 @@ version: "3.8"
 
 services:
   josm:
-    container_name: josm-gui
+    container_name: josm
     build:
       context: ./josm
-    ports:
-      - "6080:6080"
-    environment:
-      - DISPLAY=:1
     volumes:
-      - ./josm:/data
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=${DISPLAY}
+    network_mode: "host"
     shm_size: "2g"
