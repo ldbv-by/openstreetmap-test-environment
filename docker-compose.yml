@@ -5,9 +5,9 @@ services:
     container_name: josm
     build:
       context: ./josm
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
       - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
     network_mode: "host"
     shm_size: "2g"
