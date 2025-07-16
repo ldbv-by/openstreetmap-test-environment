@@ -13,6 +13,6 @@ RUN apt-get update && \
             xserver-xorg-video-dummy \
     && rm -rf /var/lib/apt/lists/*
 
-COPY preferences.xml /root/.config/JOSM
+COPY preferences.xml /root/.config/JOSM/
 
 ENTRYPOINT ["/app/docker/entrypoint.sh"]
