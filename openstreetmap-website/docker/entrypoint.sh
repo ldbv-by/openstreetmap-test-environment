@@ -23,26 +23,34 @@ bundle exec rails db:prepare
 # 4. Import initial data with Osmosis (if .pbf file exists)
 PBF_FILE="/app/db/basis-dlm-by.pbf"
 if [ -f "$PBF_FILE" ]; then
-  echo "🔁 Change coordinate columns from INTEGER to BIGINT to support larger range..."
-  psql -h db -U openstreetmap -d openstreetmap -f /app/db/alter-columns.sql
 
-  echo "🗺️ Importing OSM data from $PBF_FILE ..."
-  osmosis \
-    -verbose \
-    --read-pbf "$PBF_FILE" \
-    --log-progress \
-    --write-apidb \
-      host="db" \
-      database="openstreetmap" \
-      user="openstreetmap" \
-      validateSchemaVersion="no"
+  NODE_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_nodes;" | xargs)
+  WAY_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_ways;" | xargs)
+  RELATION_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_rels;" | xargs)
 
-  echo "🔁 Insert Test User..."
-  psql -h db -U openstreetmap -d openstreetmap -f /app/db/add-users.sql
+  if [ "$NODE_COUNT" -eq 0 ] && [ "$WAY_COUNT" -eq 0 ] && [ "$RELATION_COUNT" -eq 0 ]; then
+    echo "🔁 Change coordinate columns from INTEGER to BIGINT to support larger range..."
+    psql -h db -U openstreetmap -d openstreetmap -f /app/db/alter-columns.sql
 
-  echo "🔁 Resetting Postgres sequences..."
-  psql -h db -U openstreetmap -d openstreetmap -f /app/db/reset-sequences.sql
+    echo "🗺️ Importing OSM data from $PBF_FILE ..."
+    osmosis \
+      -verbose \
+      --read-pbf "$PBF_FILE" \
+      --log-progress \
+      --write-apidb \
+        host="db" \
+        database="openstreetmap" \
+        user="openstreetmap" \
+        validateSchemaVersion="no"
 
+    echo "🔁 Insert Test User..."
+    psql -h db -U openstreetmap -d openstreetmap -f /app/db/add-users.sql
+
+    echo "🔁 Resetting Postgres sequences..."
+    psql -h db -U openstreetmap -d openstreetmap -f /app/db/reset-sequences.sql
+  else
+    echo "⚠️ Database is not empty – skipping import."
+  fi
 else
   echo "⚠️ PBF file not found at $PBF_FILE – skipping import."
 fi
