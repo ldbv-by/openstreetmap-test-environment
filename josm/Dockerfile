@@ -15,5 +15,4 @@ RUN apt-get update && \
 
 COPY preferences.xml /root/.config/JOSM
 
-RUN chmod +x "/app/docker/entrypoint.sh"
 ENTRYPOINT ["/app/docker/entrypoint.sh"]
