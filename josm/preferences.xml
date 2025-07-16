@@ -51,7 +51,11 @@
 	<tag key='org.openstreetmap.josm.gui.io.UploadDialog.geometry' value='x=0,y=403,width=800,height=600'/>
 	<tag key='org.openstreetmap.josm.gui.preferences.PreferenceDialog.geometry' value='x=-32,y=156,width=1218,height=682'/>
 	<tag key='osm-download.bounds' value='48.3120569;11.6134501;48.3215604;11.6284704'/>
+	<tag key='osm-server.username' value='test-user'/>
+	<tag key='osm-server.password' value='password'/>
+	<tag key='osm-server.auth-method' value='basic'/>
 	<tag key='osm-server.upload-strategy' value='singlerequest'/>
+	<tag key='osm-server.url' value='http://localhost:3000/api'/>
 	<tag key='pluginmanager.lastupdate' value='1752240443716'/>
 	<tag key='pluginmanager.version' value='19230'/>
 	<tag key='pluginmanager.version-based-update.policy' value='always'/>

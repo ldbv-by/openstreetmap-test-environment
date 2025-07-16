@@ -37,6 +37,9 @@ if [ -f "$PBF_FILE" ]; then
       user="openstreetmap" \
       validateSchemaVersion="no"
 
+  echo "🔁 Insert Test User..."
+  psql -h db -U openstreetmap -d openstreetmap -f /app/db/add-users.sql
+
   echo "🔁 Resetting Postgres sequences..."
   psql -h db -U openstreetmap -d openstreetmap -f /app/db/reset-sequences.sql
 
