@@ -20,6 +20,7 @@ services:
     volumes:
       - ./openstreetmap-website/src:/app
       - ./openstreetmap-website/config:/app/host/config
+      - ./openstreetmap-website/db:/app/host/db
       - ./openstreetmap-website/docker:/app/host/docker
       - /app/node_modules/
       - web-tmp:/app/tmp
