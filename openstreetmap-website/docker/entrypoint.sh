@@ -3,12 +3,10 @@ set -e
 
 echo "🔧 Starting OpenStreetMap Website setup..."
 
-# 1. Copy example configuration files only if missing
-if [ ! -f /app/config/database.yml ]; then
-  echo "📁 Copying example configuration files..."
-  cp -r /app/host/config/* /app/config
-  touch /app/config/settings.local.yml
-fi
+# 1. Copy configuration files
+echo "📁 Copying example configuration files..."
+cp -r /app/host/config/* /app/config
+touch /app/config/settings.local.yml
 
 # 2. Wait until the database is reachable
 echo "⏳ Waiting for the database to be ready..."
