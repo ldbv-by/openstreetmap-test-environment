@@ -11,6 +11,8 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
     network_mode: "host"
     shm_size: "2g"
+    depends_on:
+      - web
 
   web:
     build:
