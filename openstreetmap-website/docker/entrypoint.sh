@@ -26,7 +26,7 @@ if [ -f "$PBF_FILE" ]; then
 
   NODE_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_nodes;" | xargs)
   WAY_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_ways;" | xargs)
-  RELATION_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_rels;" | xargs)
+  RELATION_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_relations;" | xargs)
 
   if [ "$NODE_COUNT" -eq 0 ] && [ "$WAY_COUNT" -eq 0 ] && [ "$RELATION_COUNT" -eq 0 ]; then
     echo "🔁 Change coordinate columns from INTEGER to BIGINT to support larger range..."
