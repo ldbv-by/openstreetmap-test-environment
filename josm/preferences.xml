@@ -29,12 +29,12 @@
 		<map>
 			<tag key='active' value='true'/>
 			<tag key='title' value='BasisDLM BY'/>
-			<tag key='url' value='/root/.config/JOSM/styles/basis-dlm-by-styles.zip'/>
+			<tag key='url' value='/app/styles/basis-dlm-by-styles.zip'/>
 		</map>
 		<map>
 			<tag key='active' value='false'/>
 			<tag key='title' value='BasisDLM BY transparent'/>
-			<tag key='url' value='/root/.config/JOSM/styles/basis-dlm-by-styles-transparent.zip'/>
+			<tag key='url' value='/app/styles/basis-dlm-by-styles-transparent.zip'/>
 		</map>
 	</maps>
 	<tag key='mapstyle.lastHeight' value='0'/>
@@ -82,7 +82,7 @@
 	<maps key='taggingpreset.entries'>
 		<map>
 			<tag key='title' value='Basis-DLM BY Presets'/>
-			<tag key='url' value='/root/.config/JOSM/presets/basis-dlm-by-presets.zip'/>
+			<tag key='url' value='/app/presets/basis-dlm-by-presets.zip'/>
 		</map>
 	</maps>
 	<tag key='toggleDialogs.width' value='620'/>
