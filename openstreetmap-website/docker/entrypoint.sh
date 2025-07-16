@@ -21,6 +21,23 @@ done
 echo "🗃️ Running database setup..."
 bundle exec rails db:prepare
 
-# 4. Start the Rails server
+# 4. Import initial data with Osmosis (if .pbf file exists)
+PBF_FILE="/app/config/basis-dlm-by.pbf"
+if [ -f "$PBF_FILE" ]; then
+  echo "🗺️ Importing OSM data from $PBF_FILE ..."
+  osmosis \
+    -verbose \
+    --read-pbf "$PBF_FILE" \
+    --log-progress \
+    --write-apidb \
+      host="db" \
+      database="openstreetmap" \
+      user="openstreetmap" \
+      validateSchemaVersion="no"
+else
+  echo "⚠️ PBF file not found at $PBF_FILE – skipping import."
+fi
+
+# 5. Start the Rails server
 echo "🚀 Starting Rails server..."
 exec bundle exec rails s -p 3000 -b '0.0.0.0'
