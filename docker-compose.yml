@@ -11,3 +11,40 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
     network_mode: "host"
     shm_size: "2g"
+
+  web:
+    build:
+      context: ./openstreetmap-website/src
+    environment:
+      PIDFILE: /tmp/pids/server.pid
+    volumes:
+      - ./openstreetmap-website/src:/app
+      - ./openstreetmap-website/config:/app/host/config
+      - ./openstreetmap-website/docker:/app/host/docker
+      - /app/node_modules/
+      - web-tmp:/app/tmp
+      - web-storage:/app/storage
+    tmpfs:
+      /tmp/pids/
+    ports:
+      - "3000:3000"
+    entrypoint: /app/host/docker/entrypoint.sh
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: ./openstreetmap-website/src
+      dockerfile: docker/postgres/Dockerfile
+    ports:
+      - "54321:5432"
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_DB: openstreetmap
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  web-tmp:
+  web-storage:
+  db-data:
