@@ -11,12 +11,12 @@ until pg_isready -h db -p 54321 -U postgres > /dev/null 2>&1; do
 done
 
 # 2. Create openstreetmap_schema in database if not exists
-SCHEMA_EXISTS=$(psql -h db -U postgres -d openstreetmap_test_environment -tAc \
+SCHEMA_EXISTS=$(psql -h db -U postgres -d openstreetmap -tAc \
   "SELECT 1 FROM pg_namespace WHERE nspname = 'openstreetmap_schema'")
 
 if [ "$SCHEMA_EXISTS" != "1" ]; then
   echo "📁 Schema 'openstreetmap_schema' does not exist – creating..."
-  psql -h db -U postgres -d openstreetmap_test_environment -f /app/db/create-schema.sql
+  psql -h db -U postgres -d openstreetmap -f /app/db/create-schema.sql
 else
   echo "✅ Schema 'openstreetmap_schema' already exists – skipping creation."
 fi

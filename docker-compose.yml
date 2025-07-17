@@ -44,7 +44,7 @@ services:
       - "54321:5432"
     environment:
       POSTGRES_HOST_AUTH_METHOD: trust
-      POSTGRES_DB: openstreetmap_test_environment
+      POSTGRES_DB: openstreetmap
     volumes:
       - db-data:/var/lib/postgresql/data
 
@@ -57,7 +57,7 @@ services:
     environment:
       DATABASE_HOST: db
       DATABASE_PORT: 54321
-      DATABASE: openstreetmap_test_environment
+      DATABASE: openstreetmap
       OPENSTREETMAP_SCHEMA_DB_USER: openstreetmap_schema_owner
       OPENSTREETMAP_SCHEMA_DB_PASSWORD: password
     ports:
