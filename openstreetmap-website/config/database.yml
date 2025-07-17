@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: openstreetmap
+  database: openstreetmap_test_environment
   username: openstreetmap
   password: openstreetmap
   host: db

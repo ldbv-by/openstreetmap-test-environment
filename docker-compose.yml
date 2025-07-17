@@ -44,9 +44,27 @@ services:
       - "54321:5432"
     environment:
       POSTGRES_HOST_AUTH_METHOD: trust
-      POSTGRES_DB: openstreetmap
+      POSTGRES_DB: openstreetmap_test_environment
     volumes:
       - db-data:/var/lib/postgresql/data
+
+  openstreetmap-schema:
+    build:
+      context: ./openstreetmap-schema
+    volumes:
+      - ./openstreetmap-schema:/app
+      - ./openstreetmap-schema/docker:/app/host/docker
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PORT: 54321
+      DATABASE: openstreetmap_test_environment
+      OPENSTREETMAP_SCHEMA_DB_USER: openstreetmap_schema_owner
+      OPENSTREETMAP_SCHEMA_DB_PASSWORD: password
+    ports:
+      - "8081:8080"
+    entrypoint: /app/host/docker/entrypoint.sh
+    depends_on:
+      - db
 
 volumes:
   web-tmp:

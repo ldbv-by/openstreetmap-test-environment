@@ -11,7 +11,7 @@ touch /app/config/settings.local.yml
 
 # 2. Wait until the database is reachable
 echo "⏳ Waiting for the database to be ready..."
-until pg_isready -h db -p 5432 -U postgres > /dev/null 2>&1; do
+until pg_isready -h db -p 54321 -U postgres > /dev/null 2>&1; do
   echo "⏳ Database not ready yet – waiting..."
   sleep 1
 done
@@ -24,13 +24,13 @@ bundle exec rails db:prepare
 PBF_FILE="/app/db/basis-dlm-by.pbf"
 if [ -f "$PBF_FILE" ]; then
 
-  NODE_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_nodes;" | xargs)
-  WAY_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_ways;" | xargs)
-  RELATION_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_relations;" | xargs)
+  NODE_COUNT=$(psql -h db -U openstreetmap -d openstreetmap_test_environment -t -c "SELECT COUNT(*) FROM current_nodes;" | xargs)
+  WAY_COUNT=$(psql -h db -U openstreetmap -d openstreetmap_test_environment -t -c "SELECT COUNT(*) FROM current_ways;" | xargs)
+  RELATION_COUNT=$(psql -h db -U openstreetmap -d openstreetmap_test_environment -t -c "SELECT COUNT(*) FROM current_relations;" | xargs)
 
   if [ "$NODE_COUNT" -eq 0 ] && [ "$WAY_COUNT" -eq 0 ] && [ "$RELATION_COUNT" -eq 0 ]; then
     echo "🔁 Change coordinate columns from INTEGER to BIGINT to support larger range..."
-    psql -h db -U openstreetmap -d openstreetmap -f /app/db/alter-columns.sql
+    psql -h db -U openstreetmap -d openstreetmap_test_environment -f /app/db/alter-columns.sql
 
     echo "🗺️ Importing OSM data from $PBF_FILE ..."
     osmosis \
@@ -39,15 +39,15 @@ if [ -f "$PBF_FILE" ]; then
       --log-progress \
       --write-apidb \
         host="db" \
-        database="openstreetmap" \
+        database="openstreetmap_test_environment" \
         user="openstreetmap" \
         validateSchemaVersion="no"
 
     echo "🔁 Insert Test User..."
-    psql -h db -U openstreetmap -d openstreetmap -f /app/db/add-users.sql
+    psql -h db -U openstreetmap -d openstreetmap_test_environment -f /app/db/add-users.sql
 
     echo "🔁 Resetting Postgres sequences..."
-    psql -h db -U openstreetmap -d openstreetmap -f /app/db/reset-sequences.sql
+    psql -h db -U openstreetmap -d openstreetmap_test_environment -f /app/db/reset-sequences.sql
   else
     echo "⚠️ Database is not empty – skipping import."
   fi
