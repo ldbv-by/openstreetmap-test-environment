@@ -29,12 +29,12 @@
 		<map>
 			<tag key='active' value='true'/>
 			<tag key='title' value='BasisDLM BY'/>
-			<tag key='url' value='/app/styles/basis-dlm-by-styles.zip'/>
+			<tag key='url' value='/app/styles/BasisDLM_BY_styles.zip'/>
 		</map>
 		<map>
 			<tag key='active' value='false'/>
 			<tag key='title' value='BasisDLM BY transparent'/>
-			<tag key='url' value='/app/styles/basis-dlm-by-styles-transparent.zip'/>
+			<tag key='url' value='/app/styles/BasisDLM_BY_styles_transparent.zip'/>
 		</map>
 	</maps>
 	<tag key='mapstyle.lastHeight' value='0'/>
@@ -81,8 +81,8 @@
 	<tag key='socket.timeout.read' value='300'/>
 	<maps key='taggingpreset.entries'>
 		<map>
-			<tag key='title' value='Basis-DLM BY Presets'/>
-			<tag key='url' value='/app/presets/basis-dlm-by-presets.zip'/>
+			<tag key='title' value='BasisDLM BY'/>
+			<tag key='url' value='/app/presets/BasisDLM_BY_presets.zip'/>
 		</map>
 	</maps>
 	<tag key='toggleDialogs.width' value='620'/>

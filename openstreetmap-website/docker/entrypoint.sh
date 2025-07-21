@@ -11,7 +11,7 @@ touch /app/config/settings.local.yml
 
 # 2. Wait until the database is reachable
 echo "⏳ Waiting for the database to be ready..."
-until pg_isready -h db -p 54321 -U postgres > /dev/null 2>&1; do
+until pg_isready -h db -p 5432 -U postgres > /dev/null 2>&1; do
   echo "⏳ Database not ready yet – waiting..."
   sleep 1
 done
@@ -53,7 +53,7 @@ if [ -f "$PBF_FILE" ]; then
   fi
 else
   echo "⚠️ PBF file not found at $PBF_FILE – skipping import."
-fif
+fi
 
 # 5. Start the Rails server
 echo "🚀 Starting Rails server..."

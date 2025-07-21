@@ -9,7 +9,6 @@ services:
       - DISPLAY=${DISPLAY}
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ./josm:/app
     network_mode: "host"
     shm_size: "2g"
     depends_on:
@@ -51,18 +50,14 @@ services:
   openstreetmap-schema:
     build:
       context: ./openstreetmap-schema
-    volumes:
-      - ./openstreetmap-schema:/app
-      - ./openstreetmap-schema/docker:/app/host/docker
     environment:
       DATABASE_HOST: db
-      DATABASE_PORT: 54321
+      DATABASE_PORT: 5432
       DATABASE: openstreetmap
       OPENSTREETMAP_SCHEMA_DB_USER: openstreetmap_schema_owner
       OPENSTREETMAP_SCHEMA_DB_PASSWORD: password
     ports:
       - "8081:8080"
-    entrypoint: /app/host/docker/entrypoint.sh
     depends_on:
       - db
 
