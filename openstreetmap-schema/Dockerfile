@@ -1,6 +1,7 @@
 FROM openjdk:17-jdk-alpine
 
-RUN apk add --no-cache postgresql-client &&  \
+RUN apk add --no-cache  \
+    curl postgresql-client &&  \
     mkdir -p /app/db /app/docker
 
 COPY openstreetmap-schema.jar /app

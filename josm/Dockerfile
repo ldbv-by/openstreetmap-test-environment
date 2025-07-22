@@ -15,10 +15,16 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir -p /app/docker /app/presets /app/styles
 
+
+COPY josm.jar /app/josm.jar
 COPY preferences.xml /root/.config/JOSM/
-COPY docker/ /app/docker/
-COPY presets/ /app/presets/
-COPY styles/ /app/styles
+
+COPY presets/BasisDLM_BY_presets.zip /app/presets/BasisDLM_BY_presets.zip
+
+COPY styles/BasisDLM_BY_styles.zip /app/styles/BasisDLM_BY_styles.zip
+COPY styles/BasisDLM_BY_styles_transparent.zip /app/styles/BasisDLM_BY_styles_transparent.zip
+
+COPY docker/entrypoint.sh /app/docker/entrypoint.sh
 
 RUN chmod +x /app/docker/entrypoint.sh
 

@@ -49,17 +49,18 @@ services:
 
   openstreetmap-schema:
     build:
-      context: ./openstreetmap-schema
+     context: ./openstreetmap-schema
     environment:
       DATABASE_HOST: db
       DATABASE_PORT: 5432
       DATABASE: openstreetmap
-      OPENSTREETMAP_SCHEMA_DB_USER: openstreetmap_schema_owner
-      OPENSTREETMAP_SCHEMA_DB_PASSWORD: password
+      DATABASE_USER: svc_openstreetmap_schema
+      DATABASE_PASSWORD: password
     ports:
       - "8081:8080"
     depends_on:
       - db
+      - web
 
 volumes:
   web-tmp:
