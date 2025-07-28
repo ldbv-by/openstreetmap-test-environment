@@ -56,6 +56,7 @@
 	<tag key='osm-server.auth-method' value='basic'/>
 	<tag key='osm-server.upload-strategy' value='singlerequest'/>
 	<tag key='osm-server.url' value='http://localhost:3000/api'/>
+	<tag key='openstreetmap-schema-server.url' value='http://openstreetmap-schema:8080/openstreetmap-schema'/>
 	<tag key='pluginmanager.lastupdate' value='1752240443716'/>
 	<tag key='pluginmanager.version' value='19230'/>
 	<tag key='pluginmanager.version-based-update.policy' value='always'/>
@@ -190,5 +191,15 @@
 		<entry value='org.openstreetmap.josm.data.validation.tests.UntaggedWay'/>
 		<entry value='org.openstreetmap.josm.data.validation.tests.WayConnectedToArea'/>
 		<entry value='org.openstreetmap.josm.data.validation.tests.WronglyOrderedWays'/>
+	</list>
+
+	<list key='plugins'>
+		<entry>SelectionManager</entry>
+		<entry>WebFlux</entry>
+		<entry>SaveAsChangeset</entry>
+		<entry>JTS</entry>
+		<entry>FileLog</entry>
+		<entry>Jackson</entry>
+		<entry>Lombok</entry>
 	</list>
 </preferences>

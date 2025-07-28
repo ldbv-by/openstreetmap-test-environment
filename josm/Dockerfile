@@ -18,6 +18,7 @@ RUN apt-get update && \
 
 COPY josm.jar /app/josm.jar
 COPY preferences.xml /root/.config/JOSM/
+COPY plugins /root/.config/JOSM/plugins/
 
 COPY presets/BasisDLM_BY_presets.zip /app/presets/BasisDLM_BY_presets.zip
 
