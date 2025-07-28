@@ -1,205 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences xmlns='http://josm.openstreetmap.de/preferences-1.0' version='19412'>
-	<list key='clr.general.Relation: selected'>
-		<entry value='#33FF33'/>
-		<entry value='general'/>
-		<entry value=''/>
-		<entry value='Relation: selected'/>
-	</list>
-	<tag key='commandstack.lastHeight' value='0'/>
-	<tag key='conflict.lastHeight' value='0'/>
-	<tag key='draw.dialogspanel' value='false'/>
-	<tag key='draw.rawgps.colormode' value='0'/>
-	<tag key='draw.rawgps.lines' value='2'/>
-	<tag key='expert' value='true'/>
-	<tag key='filter.lastHeight' value='0'/>
-	<tag key='gui.geometry' value='x=1912,y=-8,width=1936,height=1176'/>
-	<tag key='gui.maximized' value='true'/>
-	<list key='imagery.layers.default'>
-		<entry value='Bing'/>
-		<entry value='EsriWorldImagery'/>
-		<entry value='EsriWorldImageryClarity'/>
-		<entry value='Mapbox'/>
-		<entry value='standard'/>
-	</list>
-	<tag key='josm.version' value='19412'/>
-	<tag key='lastDirectory' value='/home/JOSM'/>
-	<tag key='mappaint.renderer-class-name' value='org.openstreetmap.josm.data.osm.visitor.paint.StyledMapRenderer'/>
-	<maps key='mappaint.style.entries'>
-		<map>
-			<tag key='active' value='true'/>
-			<tag key='title' value='BasisDLM BY'/>
-			<tag key='url' value='/app/styles/BasisDLM_BY_styles.zip'/>
-		</map>
-		<map>
-			<tag key='active' value='false'/>
-			<tag key='title' value='BasisDLM BY transparent'/>
-			<tag key='url' value='/app/styles/BasisDLM_BY_styles_transparent.zip'/>
-		</map>
-	</maps>
-	<tag key='mapstyle.lastHeight' value='0'/>
-	<tag key='minimap.lastHeight' value='0'/>
-	<tag key='multipoly.removeduplicateinnertags' value='false'/>
-	<tag key='notes/note_open.lastHeight' value='0'/>
-	<tag key='oauth.access-token.parameters.OAuth20.https://api.openstreetmap.org/api' value='{&quot;client_id&quot;:&quot;edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;https://api.openstreetmap.org/api&quot;,&quot;authorize_url&quot;:&quot;https://www.openstreetmap.org/oauth2/authorize&quot;,&quot;token_url&quot;:&quot;https://www.openstreetmap.org/oauth2/token&quot;}'/>
-	<tag key='org.openstreetmap.josm.gui.dialogs.DeleteFromRelationConfirmationDialog.geometry' value='x=760,y=420,width=400,height=200'/>
-	<tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$AddTagsDialog.geometry' value='x=745,y=386,width=430,height=348'/>
-	<tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$EditTagDialog.geometry' value='x=806,y=422,width=307,height=196'/>
-	<tag key='org.openstreetmap.josm.gui.dialogs.relation.GenericRelationEditor.geometry' value='x=-901,y=143,width=746,height=596'/>
-	<tag key='org.openstreetmap.josm.gui.download.DownloadDialog.geometry' value='x=323,y=170,width=1134,height=727'/>
-	<tag key='org.openstreetmap.josm.gui.help.HelpBrowser.geometry' value='x=0,y=0,width=600,height=400'/>
-	<tag key='org.openstreetmap.josm.gui.io.UploadDialog.geometry' value='x=0,y=403,width=800,height=600'/>
-	<tag key='org.openstreetmap.josm.gui.preferences.PreferenceDialog.geometry' value='x=-32,y=156,width=1218,height=682'/>
-	<tag key='osm-download.bounds' value='48.3120569;11.6134501;48.3215604;11.6284704'/>
-	<tag key='osm-server.username' value='test-user'/>
-	<tag key='osm-server.password' value='password'/>
-	<tag key='osm-server.auth-method' value='basic'/>
-	<tag key='osm-server.upload-strategy' value='singlerequest'/>
-	<tag key='osm-server.url' value='http://localhost:3000/api'/>
-	<tag key='openstreetmap-schema-server.url' value='http://openstreetmap-schema:8080/openstreetmap-schema'/>
-	<tag key='pluginmanager.lastupdate' value='1752240443716'/>
-	<tag key='pluginmanager.version' value='19230'/>
-	<tag key='pluginmanager.version-based-update.policy' value='always'/>
-	<tag key='preferences.reset.draw.rawgps.lines' value='true'/>
-	<tag key='propertiesdialog.lastHeight' value='0'/>
-	<tag key='propertiesdialog.visible' value='false'/>
-	<tag key='proxy.policy' value='no-proxy'/>
-	<tag key='relationlist.lastHeight' value='0'/>
-	<tag key='relationlist.visible' value='false'/>
-	<tag key='selectionlist.lastHeight' value='0'/>
-	<tag key='selectionlist.visible' value='false'/>
-	<tag key='sidetoolbar.hidden.dialogs/commandstack' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/conflict' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/filter' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/mapstyle' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/minimap' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/notes/note_open' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/propertiesdialog' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/relationlist' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/selectionlist' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/userlist' value='true'/>
-	<tag key='sidetoolbar.hidden.dialogs/validator' value='true'/>
-	<tag key='socket.timeout.read' value='300'/>
-	<maps key='taggingpreset.entries'>
-		<map>
-			<tag key='title' value='BasisDLM BY'/>
-			<tag key='url' value='/app/presets/BasisDLM_BY_presets.zip'/>
-		</map>
-	</maps>
-	<tag key='toggleDialogs.width' value='620'/>
-	<tag key='upload.comment.last-used' value='1752151241'/>
-	<tag key='userlist.lastHeight' value='0'/>
-	<tag key='validator.TagChecker.checkComplex' value='false'/>
-	<tag key='validator.TagChecker.checkComplexBeforeUpload' value='false'/>
-	<tag key='validator.TagChecker.checkFixmes' value='false'/>
-	<tag key='validator.TagChecker.checkFixmesBeforeUpload' value='false'/>
-	<tag key='validator.TagChecker.checkKeys' value='false'/>
-	<tag key='validator.TagChecker.checkKeysBeforeUpload' value='false'/>
-	<tag key='validator.TagChecker.checkPresetsRegions' value='false'/>
-	<tag key='validator.TagChecker.checkPresetsRegionsBeforeUpload' value='false'/>
-	<tag key='validator.TagChecker.checkPresetsTypes' value='false'/>
-	<tag key='validator.TagChecker.checkPresetsTypesBeforeUpload' value='false'/>
-	<tag key='validator.TagChecker.checkValues' value='false'/>
-	<tag key='validator.TagChecker.checkValuesBeforeUpload' value='false'/>
-	<tag key='validator.ignore' value='false'/>
-	<tag key='validator.lastHeight' value='0'/>
-	<tag key='validator.layer' value='false'/>
-	<list key='validator.skip'>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Addresses'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.ApiCapabilitiesTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.BarriersEntrances'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Coastlines'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.ConditionalKeys'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.ConnectivityRelations'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Boundaries'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$SelfCrossing'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Ways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DirectionNodes'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicateNode'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicateRelation'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicateWay'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicatedWayNodes'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Highways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.InternetTags'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Lanes'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.LongSegment'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.MapCSSTagChecker'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.MultipolygonTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.NameMismatch'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.OpeningHourTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.OverlappingWays'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.PowerLines'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.PublicTransportRouteTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.RelationChecker'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.RightAngleBuildingTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.SelfIntersectingWay'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.SharpAngles'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.SimilarNamedWays'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.TagChecker'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.TurnrestrictionTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnclosedWays'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedHighways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedNaturalOrLanduse'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedPower'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedRailways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedWaterways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UntaggedNode'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UntaggedWay'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.WayConnectedToArea'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.WronglyOrderedWays'/>
-	</list>
-	<list key='validator.skipBeforeUpload'>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Addresses'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.ApiCapabilitiesTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.BarriersEntrances'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Coastlines'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.ConditionalKeys'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.ConnectivityRelations'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Boundaries'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$SelfCrossing'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Ways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DirectionNodes'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicateNode'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicateRelation'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicateWay'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.DuplicatedWayNodes'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Highways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.InternetTags'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.Lanes'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.LongSegment'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.MapCSSTagChecker'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.MultipolygonTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.NameMismatch'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.OpeningHourTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.OverlappingWays'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.PowerLines'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.PublicTransportRouteTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.RelationChecker'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.RightAngleBuildingTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.SelfIntersectingWay'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.SharpAngles'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.SimilarNamedWays'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.TagChecker'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.TurnrestrictionTest'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnclosedWays'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedHighways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedNaturalOrLanduse'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedPower'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedRailways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedWaterways'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UntaggedNode'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.UntaggedWay'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.WayConnectedToArea'/>
-		<entry value='org.openstreetmap.josm.data.validation.tests.WronglyOrderedWays'/>
-	</list>
-
-	<list key='plugins'>
-		<entry>SelectionManager</entry>
-		<entry>WebFlux</entry>
-		<entry>SaveAsChangeset</entry>
-		<entry>JTS</entry>
-		<entry>FileLog</entry>
-		<entry>Jackson</entry>
-		<entry>Lombok</entry>
-	</list>
+  <tag key='cache.capabilities-452775794' value='1753707889'/>
+  <tag key='cache.motd.html' value='1753707889'/>
+  <tag key='cache.motd.html.java' value='17.0.15'/>
+  <tag key='cache.motd.html.lang' value='En:'/>
+  <tag key='cache.motd.html.version' value='19412'/>
+  <tag key='changesetdialog.lastHeight' value='0'/>
+  <list key='clr.general.Relation: selected'>
+    <entry value='#33FF33'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Relation: selected'/>
+  </list>
+  <tag key='commandstack.lastHeight' value='0'/>
+  <tag key='conflict.lastHeight' value='0'/>
+  <tag key='draw.dialogspanel' value='false'/>
+  <tag key='draw.rawgps.colormode' value='0'/>
+  <tag key='draw.rawgps.lines' value='2'/>
+  <tag key='expert' value='true'/>
+  <tag key='filter.lastHeight' value='0'/>
+  <tag key='gui.geometry' value='x=536,y=-10,width=1920,height=1080'/>
+  <tag key='gui.maximized' value='true'/>
+  <list key='imagery.layers.default'>
+    <entry value='Bing'/>
+    <entry value='EsriWorldImagery'/>
+    <entry value='EsriWorldImageryClarity'/>
+    <entry value='Mapbox'/>
+    <entry value='standard'/>
+  </list>
+  <tag key='josm.version' value='19412'/>
+  <tag key='lastDirectory' value='/home/JOSM'/>
+  <tag key='layerlist.lastHeight' value='0'/>
+  <tag key='layerlist.visible' value='false'/>
+  <tag key='mappaint.renderer-class-name' value='org.openstreetmap.josm.data.osm.visitor.paint.StyledMapRenderer'/>
+  <maps key='mappaint.style.entries'>
+    <map>
+      <tag key='active' value='false'/>
+      <tag key='title' value='JOSM default (MapCSS)'/>
+      <tag key='ptoken' value='standard'/>
+      <tag key='url' value='resource://styles/standard/elemstyles.mapcss'/>
+    </map>
+    <map>
+      <tag key='active' value='true'/>
+      <tag key='title' value='BasisDLM BY'/>
+      <tag key='url' value='/app/styles/BasisDLM_BY_styles.zip'/>
+    </map>
+    <map>
+      <tag key='active' value='false'/>
+      <tag key='title' value='BasisDLM BY transparent'/>
+      <tag key='url' value='/app/styles/BasisDLM_BY_styles_transparent.zip'/>
+    </map>
+  </maps>
+  <list key='mappaint.style.known-defaults'>
+    <entry value='resource://styles/standard/elemstyles.mapcss'/>
+  </list>
+  <tag key='mapstyle.lastHeight' value='0'/>
+  <tag key='minimap.lastHeight' value='0'/>
+  <list key='mirror.https://josm.openstreetmap.de/maps'>
+    <entry value='1753707895263'/>
+    <entry value='/root/.cache/JOSM/mirror_https___josm.openstreetmap.de_maps'/>
+  </list>
+  <list key='mirror.https://josm.openstreetmap.de/remote/geofabrik-index-v1-nogeom.json'>
+    <entry value='1753707889187'/>
+    <entry value='/root/.cache/JOSM/mirror_https___josm.openstreetmap.de_remote_geofabrik-index-v1-nogeom.json'/>
+  </list>
+  <tag key='multipoly.removeduplicateinnertags' value='false'/>
+  <tag key='notes/note_open.lastHeight' value='0'/>
+  <tag key='oauth.access-token.parameters.OAuth20.https://api.openstreetmap.org/api' value='{&quot;client_id&quot;:&quot;edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;https://api.openstreetmap.org/api&quot;,&quot;authorize_url&quot;:&quot;https://www.openstreetmap.org/oauth2/authorize&quot;,&quot;token_url&quot;:&quot;https://www.openstreetmap.org/oauth2/token&quot;}'/>
+  <tag key='object_editor_icon.lastHeight' value='620'/>
+  <tag key='object_editor_icon.visible' value='true'/>
+  <tag key='openstreetmap-schema-server.url' value='http://localhost:8081/openstreetmap-schema'/>
+  <tag key='org.openstreetmap.josm.gui.dialogs.DeleteFromRelationConfirmationDialog.geometry' value='x=760,y=420,width=400,height=200'/>
+  <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$AddTagsDialog.geometry' value='x=745,y=386,width=430,height=348'/>
+  <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$EditTagDialog.geometry' value='x=806,y=422,width=307,height=196'/>
+  <tag key='org.openstreetmap.josm.gui.dialogs.relation.GenericRelationEditor.geometry' value='x=-901,y=143,width=746,height=596'/>
+  <tag key='org.openstreetmap.josm.gui.download.DownloadDialog.geometry' value='x=259,y=106,width=1134,height=727'/>
+  <tag key='org.openstreetmap.josm.gui.help.HelpBrowser.geometry' value='x=0,y=0,width=600,height=400'/>
+  <tag key='org.openstreetmap.josm.gui.io.UploadDialog.geometry' value='x=0,y=403,width=800,height=600'/>
+  <tag key='org.openstreetmap.josm.gui.preferences.PreferenceDialog.geometry' value='x=-32,y=156,width=1218,height=682'/>
+  <tag key='osm-download.bounds' value='49.8766612;12.336874;49.8833536;12.3479462'/>
+  <tag key='osm-server.auth-method' value='basic'/>
+  <tag key='osm-server.password' value='password'/>
+  <tag key='osm-server.upload-strategy' value='singlerequest'/>
+  <tag key='osm-server.url' value='http://localhost:3000/api'/>
+  <tag key='osm-server.username' value='test-user'/>
+  <tag key='pluginmanager.lastupdate' value='1753707886650'/>
+  <tag key='pluginmanager.version' value='19412'/>
+  <tag key='pluginmanager.version-based-update.policy' value='always'/>
+  <list key='plugins'>
+    <entry value='SelectionManager'/>
+    <entry value='WebFlux'/>
+    <entry value='SaveAsChangeset'/>
+    <entry value='JTS'/>
+    <entry value='FileLog'/>
+    <entry value='Jackson'/>
+    <entry value='Lombok'/>
+    <entry value='ObjectEditor'/>
+  </list>
+  <tag key='preferences.reset.draw.rawgps.lines' value='true'/>
+  <tag key='propertiesdialog.lastHeight' value='0'/>
+  <tag key='propertiesdialog.visible' value='false'/>
+  <tag key='proxy.policy' value='no-proxy'/>
+  <tag key='relationlist.lastHeight' value='0'/>
+  <tag key='relationlist.visible' value='false'/>
+  <tag key='selection_manager_icon.lastHeight' value='280'/>
+  <tag key='selection_manager_icon.visible' value='true'/>
+  <tag key='selectionlist.lastHeight' value='0'/>
+  <tag key='selectionlist.visible' value='false'/>
+  <tag key='sidetoolbar.hidden.dialogs/commandstack' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/conflict' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/filter' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/mapstyle' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/minimap' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/notes/note_open' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/propertiesdialog' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/relationlist' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/selectionlist' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/userlist' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/validator' value='true'/>
+  <tag key='socket.timeout.read' value='300'/>
+  <maps key='taggingpreset.entries'>
+    <map>
+      <tag key='title' value='BasisDLM BY'/>
+      <tag key='url' value='/app/presets/BasisDLM_BY_presets.zip'/>
+    </map>
+  </maps>
+  <tag key='toggleDialogs.width' value='595'/>
+  <tag key='upload.comment.last-used' value='1752151241'/>
+  <tag key='userlist.lastHeight' value='0'/>
+  <tag key='validator.TagChecker.checkComplex' value='false'/>
+  <tag key='validator.TagChecker.checkComplexBeforeUpload' value='false'/>
+  <tag key='validator.TagChecker.checkFixmes' value='false'/>
+  <tag key='validator.TagChecker.checkFixmesBeforeUpload' value='false'/>
+  <tag key='validator.TagChecker.checkKeys' value='false'/>
+  <tag key='validator.TagChecker.checkKeysBeforeUpload' value='false'/>
+  <tag key='validator.TagChecker.checkPresetsRegions' value='false'/>
+  <tag key='validator.TagChecker.checkPresetsRegionsBeforeUpload' value='false'/>
+  <tag key='validator.TagChecker.checkPresetsTypes' value='false'/>
+  <tag key='validator.TagChecker.checkPresetsTypesBeforeUpload' value='false'/>
+  <tag key='validator.TagChecker.checkValues' value='false'/>
+  <tag key='validator.TagChecker.checkValuesBeforeUpload' value='false'/>
+  <tag key='validator.ignore' value='false'/>
+  <tag key='validator.lastHeight' value='0'/>
+  <tag key='validator.layer' value='false'/>
+  <list key='validator.skip'>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Addresses'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.ApiCapabilitiesTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.BarriersEntrances'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Coastlines'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.ConditionalKeys'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.ConnectivityRelations'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Boundaries'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$SelfCrossing'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Ways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DirectionNodes'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicateNode'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicateRelation'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicateWay'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicatedWayNodes'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Highways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.InternetTags'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Lanes'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.LongSegment'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.MapCSSTagChecker'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.MultipolygonTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.NameMismatch'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.OpeningHourTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.OverlappingWays'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.PowerLines'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.PublicTransportRouteTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.RelationChecker'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.RightAngleBuildingTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.SelfIntersectingWay'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.SharpAngles'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.SimilarNamedWays'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.TagChecker'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.TurnrestrictionTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnclosedWays'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedHighways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedNaturalOrLanduse'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedPower'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedRailways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedWaterways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UntaggedNode'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UntaggedWay'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.WayConnectedToArea'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.WronglyOrderedWays'/>
+  </list>
+  <list key='validator.skipBeforeUpload'>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Addresses'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.ApiCapabilitiesTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.BarriersEntrances'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Coastlines'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.ConditionalKeys'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.ConnectivityRelations'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Boundaries'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$SelfCrossing'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.CrossingWays$Ways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DirectionNodes'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicateNode'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicateRelation'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicateWay'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.DuplicatedWayNodes'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Highways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.InternetTags'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.Lanes'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.LongSegment'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.MapCSSTagChecker'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.MultipolygonTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.NameMismatch'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.OpeningHourTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.OverlappingWays'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.PowerLines'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.PublicTransportRouteTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.RelationChecker'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.RightAngleBuildingTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.SelfIntersectingWay'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.SharpAngles'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.SimilarNamedWays'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.TagChecker'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.TurnrestrictionTest'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnclosedWays'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedHighways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedNaturalOrLanduse'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedPower'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedRailways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UnconnectedWays$UnconnectedWaterways'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UntaggedNode'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.UntaggedWay'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.WayConnectedToArea'/>
+    <entry value='org.openstreetmap.josm.data.validation.tests.WronglyOrderedWays'/>
+  </list>
 </preferences>
