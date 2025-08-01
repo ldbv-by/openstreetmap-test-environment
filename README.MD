@@ -32,7 +32,7 @@ Diese Testumgebung dient dazu, JOSM mit spezifischen LDBV-Plugins zusammen mit e
    - `db` – PostgreSQL-Datenbank
    - `web` – OpenStreetMap-Webseite
    - `openstreetmap-schema` – enthält das ATKIS-BasisDLM-Schema für Bayern
-   - `josm` – JOSM-Editor mit LDBV-spezifischen Plugins (wird automatisch gestartet)
+   - `josm` – JOSM-Editor mit LDBV-spezifischen Plugins (läuft über VNC)
 
 ---
 
@@ -40,14 +40,20 @@ Diese Testumgebung dient dazu, JOSM mit spezifischen LDBV-Plugins zusammen mit e
 
 ### 🗺️ JOSM (mit LDBV-Plugins)
 
-Der JOSM-Container wird **automatisch gestartet** und läuft mit grafischer Benutzeroberfläche via X11 (erfordert X11-Unterstützung auf dem Host, z. B. unter Linux oder WSL2 mit X-Server) 
-Er enthält bereits alle relevanten Plugins für die Darstellung und Bearbeitung von ATKIS-Daten nach AdV-Vorgaben.
+Der JOSM-Container ist über **VNC** erreichbar.
+Am Startbildschirm steht die Anwendung **"JOSM-BVV"** zur Verfügung, über die das **ATKIS Basis-DLM** bearbeitet werden kann.
 
-Falls du JOSM zwischenzeitlich schließt, kannst du ihn mit folgendem Befehl erneut starten:
+#### 🔓 Zugriffsmöglichkeiten:
 
-```bash
-docker start josm
-```
+- **Via Browser (noVNC):**  
+  [http://localhost:6901/vnc.html](http://localhost:6901/vnc.html)  
+  Standard-Passwort: `headless`  
+  → Weitere Infos: [accetto.github.io](https://accetto.github.io/user-guide-g3/container-user/)
+
+
+- **Via VNC-Client:**  
+  Server: `localhost:5901`  
+  Passwort: `headless`
 
 ### 🧩 openstreetmap-schema
 
