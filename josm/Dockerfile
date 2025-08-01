@@ -11,6 +11,7 @@ RUN apt-get update && \
             x11-apps \
             xauth \
             xserver-xorg-video-dummy \
+            dos2unix \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir -p /app/docker /app/presets /app/styles
@@ -26,7 +27,6 @@ COPY styles/BasisDLM_BY_styles.zip /app/styles/BasisDLM_BY_styles.zip
 COPY styles/BasisDLM_BY_styles_transparent.zip /app/styles/BasisDLM_BY_styles_transparent.zip
 
 COPY docker/entrypoint.sh /app/docker/entrypoint.sh
-
-RUN chmod +x /app/docker/entrypoint.sh
+RUN dos2unix /app/docker/entrypoint.sh && chmod +x /app/docker/entrypoint.sh
 
 ENTRYPOINT ["/app/docker/entrypoint.sh"]

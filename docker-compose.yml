@@ -29,7 +29,7 @@ services:
       /tmp/pids/
     ports:
       - "3000:3000"
-    entrypoint: /app/host/docker/entrypoint.sh
+    entrypoint: [ "/bin/sh", "-c", "dos2unix /app/host/docker/entrypoint.sh && /app/host/docker/entrypoint.sh" ]
     depends_on:
       - db
 
