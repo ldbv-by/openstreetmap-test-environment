@@ -3,12 +3,9 @@ services:
     container_name: josm
     build:
       context: ./josm
-    environment:
-      - DISPLAY=${DISPLAY}
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-    network_mode: "host"
-    shm_size: "2g"
+    ports:
+      - "6901:6901" # noVNC
+      - "5901:5901" # VNC
     depends_on:
       - web
 

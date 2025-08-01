@@ -69,7 +69,7 @@
   <tag key='oauth.access-token.parameters.OAuth20.https://api.openstreetmap.org/api' value='{&quot;client_id&quot;:&quot;edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;https://api.openstreetmap.org/api&quot;,&quot;authorize_url&quot;:&quot;https://www.openstreetmap.org/oauth2/authorize&quot;,&quot;token_url&quot;:&quot;https://www.openstreetmap.org/oauth2/token&quot;}'/>
   <tag key='object_editor_icon.lastHeight' value='620'/>
   <tag key='object_editor_icon.visible' value='true'/>
-  <tag key='openstreetmap-schema-server.url' value='http://localhost:8081/openstreetmap-schema'/>
+  <tag key='openstreetmap-schema-server.url' value='http://openstreetmap-schema:8080/openstreetmap-schema'/>
   <tag key='org.openstreetmap.josm.gui.dialogs.DeleteFromRelationConfirmationDialog.geometry' value='x=760,y=420,width=400,height=200'/>
   <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$AddTagsDialog.geometry' value='x=745,y=386,width=430,height=348'/>
   <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$EditTagDialog.geometry' value='x=806,y=422,width=307,height=196'/>
@@ -82,7 +82,7 @@
   <tag key='osm-server.auth-method' value='basic'/>
   <tag key='osm-server.password' value='password'/>
   <tag key='osm-server.upload-strategy' value='singlerequest'/>
-  <tag key='osm-server.url' value='http://localhost:3000/api'/>
+  <tag key='osm-server.url' value='http://web:3000/api'/>
   <tag key='osm-server.username' value='test-user'/>
   <tag key='pluginmanager.lastupdate' value='1753707886650'/>
   <tag key='pluginmanager.version' value='19412'/>
@@ -92,7 +92,6 @@
     <entry value='WebFlux'/>
     <entry value='SaveAsChangeset'/>
     <entry value='JTS'/>
-    <entry value='FileLog'/>
     <entry value='Jackson'/>
     <entry value='Lombok'/>
     <entry value='ObjectEditor'/>
@@ -118,7 +117,7 @@
   <tag key='sidetoolbar.hidden.dialogs/selectionlist' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/userlist' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/validator' value='true'/>
-  <tag key='socket.timeout.read' value='300'/>
+  <tag key='socket.timeout.read' value='500'/>
   <maps key='taggingpreset.entries'>
     <map>
       <tag key='title' value='BasisDLM BY'/>
