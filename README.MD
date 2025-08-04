@@ -19,6 +19,7 @@ openstreetmap-test-environment/
 
 ## 📦 Voraussetzungen
 
+- [Git](https://git-scm.com/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
