@@ -5,6 +5,18 @@ Diese Testumgebung dient dazu, JOSM mit spezifischen LDBV-Plugins zusammen mit e
 
 ---
 
+## 📁 Projektstruktur
+
+```text
+openstreetmap-test-environment/
+├── josm/                      # JOSM-Editor mit Plugins, Styles und Presets
+├── openstreetmap-website/     # OpenStreetMap-Website inkl. API und Datenbank
+├── openstreetmap-schema/      # ATKIS® Basis-DLM BY Schema
+└── docker-compose.yml         # Definition aller Services
+```
+
+---
+
 ## 📦 Voraussetzungen
 
 - [Docker](https://www.docker.com/)
@@ -27,58 +39,40 @@ Diese Testumgebung dient dazu, JOSM mit spezifischen LDBV-Plugins zusammen mit e
    docker compose up --build
    ```
 
-   Dies baut und startet folgende Services:
+3. **Zugang zum JOSM-Editor:**
+- **Im Browser (via noVNC):**  
+  🖥️ [http://localhost:6901/vnc.html](http://localhost:6901/vnc.html)  
+  🔑 Standard-Passwort: `headless`  
 
-   - `db` – PostgreSQL-Datenbank
-   - `web` – OpenStreetMap-Webseite
-   - `openstreetmap-schema` – enthält das ATKIS-BasisDLM-Schema für Bayern
-   - `josm` – JOSM-Editor mit LDBV-spezifischen Plugins (läuft über VNC)
+
+- **Mit einem VNC-Client:**  
+  🖥️ Serveradresse: `localhost:5901`  
+  🔑 Standard-Passwort: `headless`
+
+    → Weitere Infos: [accetto.github.io](https://accetto.github.io/user-guide-g3/container-user/)
 
 ---
 
 ## 🧭 Dienste im Überblick
 
-### 🗺️ JOSM (mit LDBV-Plugins)
+### 🗺️ JOSM
 
-Der JOSM-Container ist über **VNC** erreichbar.
-Am Startbildschirm steht die Anwendung **"JOSM-BVV"** zur Verfügung, über die das **ATKIS Basis-DLM** bearbeitet werden kann.
-
-#### 🔓 Zugriffsmöglichkeiten:
-
-- **Via Browser (noVNC):**  
-  [http://localhost:6901/vnc.html](http://localhost:6901/vnc.html)  
-  Standard-Passwort: `headless`  
-  → Weitere Infos: [accetto.github.io](https://accetto.github.io/user-guide-g3/container-user/)
-
-
-- **Via VNC-Client:**  
-  Server: `localhost:5901`  
-  Passwort: `headless`
+Im JOSM-Container wird der JOSM-Editor über **VNC** bereitgestellt.
+Auf dem Startbildschirm befindet sich die Anwendung **JOSM-BVV**, über die der Editor mit den vorkonfigurierten Plugins, Styles und Presets gestartet werden kann.
 
 ### 🧩 openstreetmap-schema
 
-Dieser Dienst stellt das **ATKIS BasisDLM BY Schema** bereit.  
-Die Plugins im JOSM greifen auf diesen Dienst zu, um die Datenbankstruktur für ATKIS darzustellen.
+Dieser Dienst stellt das **ATKIS® Basis-DLM BY Schema** zur Verfügung.
+Die im JOSM-Editor integrierten Plugins nutzen diesen Dienst, um die Datenbankstruktur des ATKIS-Modells darzustellen und entsprechend zu interpretieren.
 
-[Swagger UI öffnen](http://localhost:8081/openstreetmap-schema/)
+👉 Die API-Dokumentation ist unter folgendem Link verfügbar: [Swagger UI öffnen](http://localhost:8081/openstreetmap-schema/)
 
 ### 🌐 OpenStreetMap Website
 
-Die OSM-Website stellt die OSM-API mit dazugehöriger OSM-DB bereit, welche mit Testdaten aus Bayern befüllt wird.
+Die OSM-Website stellt die vollständige OSM-API samt zugehöriger Datenbank bereit, die mit Testdaten aus Bayern befüllt ist.
 
 ---
 
-## 📁 Verzeichnisstruktur
-
-```text
-openstreetmap-test-environment/
-├── josm/                      # Docker-Build für JOSM mit Plugins
-├── openstreetmap-website/     # Code + Dockerfile für OSM-Webseite
-├── openstreetmap-schema/      # Docker-Build für ATKIS-Schema-Service
-└── docker-compose.yml         # Definition aller Services
-```
-
----
 
 ## 🧹 Beenden & Aufräumen
 
