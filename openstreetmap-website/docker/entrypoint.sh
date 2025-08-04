@@ -6,7 +6,6 @@ echo "🔧 Starting OpenStreetMap Website setup..."
 # 1. Copy configuration files
 echo "📁 Copying example configuration files..."
 cp -r /app/host/config/* /app/config
-cp -r /app/host/db/* /app/db
 touch /app/config/settings.local.yml
 
 # 2. Wait until the database is reachable
@@ -21,7 +20,7 @@ echo "🗃️ Running database setup..."
 bundle exec rails db:prepare
 
 # 4. Import initial data with Osmosis (if .pbf file exists)
-PBF_FILE="/app/db/basis-dlm-by.pbf"
+PBF_FILE="/app/host/db/basis-dlm-by.pbf"
 if [ -f "$PBF_FILE" ]; then
 
   NODE_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_nodes;" | xargs)
@@ -30,7 +29,7 @@ if [ -f "$PBF_FILE" ]; then
 
   if [ "$NODE_COUNT" -eq 0 ] && [ "$WAY_COUNT" -eq 0 ] && [ "$RELATION_COUNT" -eq 0 ]; then
     echo "🔁 Change coordinate columns from INTEGER to BIGINT to support larger range..."
-    psql -h db -U openstreetmap -d openstreetmap -f /app/db/alter-columns.sql
+    psql -h db -U openstreetmap -d openstreetmap -f /app/host/db/alter-columns.sql
 
     echo "🗺️ Importing OSM data from $PBF_FILE ..."
     osmosis \
@@ -44,10 +43,10 @@ if [ -f "$PBF_FILE" ]; then
         validateSchemaVersion="no"
 
     echo "🔁 Insert Test User..."
-    psql -h db -U openstreetmap -d openstreetmap -f /app/db/add-users.sql
+    psql -h db -U openstreetmap -d openstreetmap -f /app/host/db/add-users.sql
 
     echo "🔁 Resetting Postgres sequences..."
-    psql -h db -U openstreetmap -d openstreetmap -f /app/db/reset-sequences.sql
+    psql -h db -U openstreetmap -d openstreetmap -f /app/host/db/reset-sequences.sql
   else
     echo "⚠️ Database is not empty – skipping import."
   fi
