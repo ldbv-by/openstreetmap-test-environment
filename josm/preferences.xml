@@ -381,4 +381,25 @@
     <entry value='org.openstreetmap.josm.data.validation.tests.WayConnectedToArea'/>
     <entry value='org.openstreetmap.josm.data.validation.tests.WronglyOrderedWays'/>
   </list>
+
+  <list key='toolbar'>
+    <entry value='open'/>
+    <entry value='save'/>
+    <entry value='download'/>
+    <entry value='upload'/>
+    <entry value='|'/>
+    <entry value='undo'/>
+    <entry value='redo'/>
+    <entry value='|'/>
+    <entry value='dialogs/search(searchExpression=)'/>
+    <entry value='preference'/>
+    <entry value='|'/>
+    <entry value='combineway'/>
+    <entry value='wayflip'/>
+    <entry value='|'/>
+    <entry value='imagery-offset'/>
+    <entry value='|'/>
+    <entry value='mappaint/BasisDLM BY'/>
+    <entry value='mappaint/BasisDLM BY transparent'/>
+  </list>
 </preferences>
