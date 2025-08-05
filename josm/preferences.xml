@@ -29,9 +29,9 @@
       <tag key='minimumTileExpire' value='3600'/>
       <tag key='name' value='DOP20 (Farbe)'/>
       <tag key='type' value='wms'/>
-      <tag key='url' value='https://geoservices.bayern.de/pro/wms/dop/v1/dop20?language=ger&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dop20c&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
+      <tag key='url' value='https://geoservices.bayern.de/od/wms/dop/v1/dop20?language=ger&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dop20c&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/DOP.png'/>
+      <tag key='icon' value='/app/icons/imagery/DOP.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -40,9 +40,9 @@
       <tag key='minimumTileExpire' value='3600'/>
       <tag key='name' value='DOP20 (Infrarot)'/>
       <tag key='type' value='wms'/>
-      <tag key='url' value='https://geoservices.bayern.de/pro/wms/dop/v1/dop20?language=ger&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dop20cir&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
+      <tag key='url' value='https://geoservices.bayern.de/od/wms/dop/v1/dop20?language=ger&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dop20cir&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/CIR.png'/>
+      <tag key='icon' value='/app/icons/imagery/CIR.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -53,7 +53,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/dgm/v1/relief?language=ger&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_relief_schraeglicht&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/DGM.png'/>
+      <tag key='icon' value='/app/icons/imagery/DGM.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -64,19 +64,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/dgm/v1/relief?language=ger&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_relief_kombiniert&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/DGM.png'/>
-      <tag key='customHttpHeaders' value='{}'/>
-    </map>
-    <map>
-      <tag key='projections' value='EPSG:3857,EPSG:102100,CRS:84,EPSG:4258,EPSG:25832,EPSG:25833,EPSG:31463,EPSG:31464,EPSG:31465,EPSG:31467,EPSG:31468,EPSG:31469,EPSG:4326'/>
-      <tag key='valid-georeference' value='true'/>
-      <tag key='transparent' value='true'/>
-      <tag key='minimumTileExpire' value='3600'/>
-      <tag key='name' value='BAYSIS'/>
-      <tag key='type' value='wms'/>
-      <tag key='url' value='https://www.baysis.bayern.de/gis/services/wms/BAYSIS_Strassennetz_ASB/MapServer/WmsServer?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=strassennetz_100,anschlussstellen,netzknoten,strassenname&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
-      <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/BAYSIS.png'/>
+      <tag key='icon' value='/app/icons/imagery/DGM.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -88,7 +76,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/tn?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_tn_gewaesser,by_alkis_tn_siedlung,by_alkis_tn_vegetation,by_alkis_tn_verkehr&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/ALKIS-TN.png'/>
+      <tag key='icon' value='/app/icons/imagery/ALKIS-TN.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -98,9 +86,9 @@
       <tag key='minimumTileExpire' value='3600'/>
       <tag key='name' value='ALKIS (Gelb)'/>
       <tag key='type' value='wms'/>
-      <tag key='url' value='https://geoservices.bayern.de/pro/wms/alkis/v1/flurkarte?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_flurkarte_umr_gelb&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
+      <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkart?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_parzellarkarte_umr_gelb&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/DFKGelb.png'/>
+      <tag key='icon' value='/app/icons/imagery/DFKGelb.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -110,9 +98,9 @@
       <tag key='minimumTileExpire' value='3600'/>
       <tag key='name' value='ALKIS (Schwarz)'/>
       <tag key='type' value='wms'/>
-      <tag key='url' value='https://geoservices.bayern.de/pro/wms/alkis/v1/flurkarte?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_flurkarte_umr_schwarz&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
+      <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkart?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_parzellarkarte_umr_schwarz&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/DFKSchwarz.png'/>
+      <tag key='icon' value='/app/icons/imagery/DFKSchwarz.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -123,7 +111,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/dtk/v1/dok?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dok&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/DOK.png'/>
+      <tag key='icon' value='/app/icons/imagery/DOK.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -134,7 +122,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/dtk/v1/dtk25?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dtk25&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/DTK25.png'/>
+      <tag key='icon' value='/app/icons/imagery/DTK25.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -145,7 +133,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/dgm/v1/hl?language=ger&amp;FORMAT=image/png&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_hl_b&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/Hoehenlinien.png'/>
+      <tag key='icon' value='/app/icons/imagery/Hoehenlinien.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -156,7 +144,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/dgm/v1/hl?language=ger&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_hl_g&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/Hoehenlinien.png'/>
+      <tag key='icon' value='/app/icons/imagery/Hoehenlinien.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -168,7 +156,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/verwaltungsgrenzen?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_gmd_komplett&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/Verwaltungsgrenzen.png'/>
+      <tag key='icon' value='/app/icons/imagery/Verwaltungsgrenzen.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
     <map>
@@ -180,7 +168,7 @@
       <tag key='type' value='wms'/>
       <tag key='url' value='https://www.lfu.bayern.de/gdi/wms/natur/schutzgebiete?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=naturschutzgebiet&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
-      <tag key='icon' value='http://josm.geotopo.bvv.bayern.de/download/icons/imagery/NSG_Bayern.png'/>
+      <tag key='icon' value='/app/icons/imagery/NSG_Bayern.png'/>
       <tag key='customHttpHeaders' value='{}'/>
     </map>
   </maps>

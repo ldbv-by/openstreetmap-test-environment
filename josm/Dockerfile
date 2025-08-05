@@ -20,6 +20,7 @@ RUN mkdir -p /app/presets /app/styles /home/headless/.config/JOSM /home/headless
 # System content
 COPY josm.jar /app/josm.jar
 COPY icons/josm-bvv.png /app/icons/josm-bvv.png
+COPY icons/imagery/ /app/icons/imagery/
 COPY presets/BasisDLM_BY_presets.zip /app/presets/
 COPY styles/BasisDLM_BY_styles.zip /app/styles/
 COPY styles/BasisDLM_BY_styles_transparent.zip /app/styles/
