@@ -86,7 +86,7 @@
       <tag key='minimumTileExpire' value='3600'/>
       <tag key='name' value='ALKIS (Gelb)'/>
       <tag key='type' value='wms'/>
-      <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkart?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_parzellarkarte_umr_gelb&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
+      <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkarte?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_parzellarkarte_umr_gelb&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
       <tag key='icon' value='/app/icons/imagery/DFKGelb.png'/>
       <tag key='customHttpHeaders' value='{}'/>
@@ -98,7 +98,7 @@
       <tag key='minimumTileExpire' value='3600'/>
       <tag key='name' value='ALKIS (Schwarz)'/>
       <tag key='type' value='wms'/>
-      <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkart?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_parzellarkarte_umr_schwarz&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
+      <tag key='url' value='https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkarte?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.3.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_alkis_parzellarkarte_umr_schwarz&amp;STYLES=&amp;CRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}'/>
       <tag key='cookies' value=''/>
       <tag key='icon' value='/app/icons/imagery/DFKSchwarz.png'/>
       <tag key='customHttpHeaders' value='{}'/>
