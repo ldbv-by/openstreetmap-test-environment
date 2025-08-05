@@ -246,6 +246,9 @@
     <entry value='Jackson'/>
     <entry value='Lombok'/>
     <entry value='ObjectEditor'/>
+    <entry value='PolygonCutOut'/>
+    <entry value='reltoolbox'/>
+    <entry value='utilsplugin2'/>
   </list>
   <tag key='preferences.reset.draw.rawgps.lines' value='true'/>
   <tag key='propertiesdialog.lastHeight' value='0'/>
