@@ -74,6 +74,24 @@ Die OSM-Website stellt die vollständige OSM-API samt zugehöriger Datenbank ber
 
 ---
 
+## 🔧 VNC-Auflösung anpassen
+
+Standardmäßig startet der Desktop im VNC in **Full HD (1920×1080)**.  
+Wenn du die Auflösung ändern willst, setze die Umgebungsvariable **`VNC_RESOLUTION`** in deiner `docker-compose.yml`, z. B.:
+
+```yaml
+services:
+  josm:
+    build: .
+    environment:
+      - VNC_RESOLUTION=2560x1440   # Beispiel: QHD
+    ports:
+      - "5901:5901"  # VNC
+      - "6901:6901"  # noVNC
+
+```
+
+---
 
 ## 🧹 Beenden & Aufräumen
 
