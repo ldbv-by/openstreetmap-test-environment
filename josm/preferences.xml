@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences xmlns='http://josm.openstreetmap.de/preferences-1.0' version='19412'>
+  <list key='browser.unix'>
+    <entry value='/usr/bin/firefox'/>
+  </list>
   <tag key='cache.capabilities-452775794' value='1753707889'/>
   <tag key='cache.capabilities1028419983' value='1754398293'/>
   <tag key='cache.motd.html' value='1754398275'/>
@@ -224,7 +227,12 @@
   </list>
   <tag key='multipoly.removeduplicateinnertags' value='false'/>
   <tag key='notes/note_open.lastHeight' value='0'/>
+  <tag key='oauth.access-token.object.OAuth20.web' value='{&quot;access_token&quot;:&quot;_aLsyhc-pD30GOis33yipFDt6B2733hPoxY4go8-Nt4&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;created_at&quot;:1755107978,&quot;scope&quot;:&quot;read_gpx write_gpx read_prefs write_prefs write_api write_notes&quot;}'/>
+  <tag key='oauth.access-token.parameters.OAuth20.http://web:3000/api' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://web:3000/api&quot;,&quot;authorize_url&quot;:&quot;http://web:3000/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://web:3000/oauth2/token&quot;}'/>
   <tag key='oauth.access-token.parameters.OAuth20.https://api.openstreetmap.org/api' value='{&quot;client_id&quot;:&quot;edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;https://api.openstreetmap.org/api&quot;,&quot;authorize_url&quot;:&quot;https://www.openstreetmap.org/oauth2/authorize&quot;,&quot;token_url&quot;:&quot;https://www.openstreetmap.org/oauth2/token&quot;}'/>
+  <tag key='oauth.access-token.parameters.OAuth20.web' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://web:3000/api&quot;,&quot;authorize_url&quot;:&quot;http://web:3000/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://web:3000/oauth2/token&quot;}'/>
+  <tag key='oauth.settings.use-default' value='false'/>
+  <tag key='oauth.use-for-all-requests' value='false'/>
   <tag key='object_editor_icon.lastHeight' value='256'/>
   <tag key='object_editor_icon.visible' value='true'/>
   <tag key='org.openstreetmap.josm.gui.dialogs.DeleteFromRelationConfirmationDialog.geometry' value='x=760,y=420,width=400,height=200'/>
@@ -236,8 +244,6 @@
   <tag key='org.openstreetmap.josm.gui.io.UploadDialog.geometry' value='x=0,y=403,width=800,height=600'/>
   <tag key='org.openstreetmap.josm.gui.preferences.PreferenceDialog.geometry' value='x=-32,y=156,width=1218,height=682'/>
   <tag key='osm-download.bounds' value='49.8766612;12.336874;49.8833536;12.3479462'/>
-  <tag key='osm-server.auth-method' value='basic'/>
-  <tag key='osm-server.password' value='password'/>
   <tag key='osm-server.upload-strategy' value='singlerequest'/>
   <tag key='osm-server.url' value='http://web:3000/api'/>
   <tag key='osm-server.username' value='test-user'/>
@@ -264,10 +270,22 @@
   <tag key='relationlist.visible' value='false'/>
   <tag key='reltoolbox.lastHeight' value='0'/>
   <tag key='reltoolbox.visible' value='false'/>
+  <tag key='remotecontrol.permission.authorization' value='true'/>
   <tag key='selection_manager_icon.lastHeight' value='247'/>
   <tag key='selection_manager_icon.visible' value='true'/>
   <tag key='selectionlist.lastHeight' value='0'/>
   <tag key='selectionlist.visible' value='false'/>
+  <list key='sensitive.keys'>
+    <entry value='oauth.access-token.key'/>
+    <entry value='oauth.access-token.object.OAuth20.web'/>
+    <entry value='oauth.access-token.parameters.OAuth20.web'/>
+    <entry value='oauth.access-token.secret'/>
+    <entry value='osm-server.password'/>
+    <entry value='osm-server.username'/>
+    <entry value='proxy.pass'/>
+    <entry value='proxy.user'/>
+    <entry value='sensitive.keys'/>
+  </list>
   <tag key='sidetoolbar.hidden.dialogs/commandstack' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/conflict' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/filter' value='true'/>

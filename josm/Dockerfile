@@ -1,4 +1,4 @@
-FROM accetto/ubuntu-vnc-xfce-g3:24.04
+FROM accetto/ubuntu-vnc-xfce-firefox-g3:24.04
 
 USER 0
 
