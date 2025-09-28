@@ -1,7 +1,7 @@
 
-# OpenStreetMap Testumgebung (LDBV)
+# OpenStreetMap Testumgebung
 
-Diese Testumgebung dient dazu, JOSM mit spezifischen LDBV-Plugins zusammen mit einer OpenStreetMap-Webseite und einem passenden ATKIS-Datenbankschema zu betreiben. Die Umgebung basiert vollständig auf Docker.
+Diese Testumgebung umfasst JOSM in Kombination mit der OpenStreetMap-Webseite und ermöglicht mithilfe eines Qualitätsframeworks die Überprüfung der Datenqualität gemäß den Richtlinien der AdV. In die OSM-Datenbank ist ein Ausschnitt aus Bayern als Testdatensatz integriert.
 
 ---
 
@@ -9,9 +9,8 @@ Diese Testumgebung dient dazu, JOSM mit spezifischen LDBV-Plugins zusammen mit e
 
 ```text
 openstreetmap-test-environment/
-├── josm/                      # JOSM-Editor mit Plugins, Styles und Presets
+├── josm/                      # JOSM-Editor
 ├── openstreetmap-website/     # OpenStreetMap-Website inkl. API und Datenbank
-├── openstreetmap-schema/      # ATKIS® Basis-DLM BY Schema
 └── docker-compose.yml         # Definition aller Services
 ```
 

@@ -20,7 +20,7 @@ echo "🗃️ Running database setup..."
 bundle exec rails db:prepare
 
 # 4. Import initial data with Osmosis (if .pbf file exists)
-PBF_FILE="/app/host/db/basis-dlm-by.pbf"
+PBF_FILE="/app/host/db/data.osm.pbf"
 if [ -f "$PBF_FILE" ]; then
 
   NODE_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_nodes;" | xargs)
@@ -28,9 +28,6 @@ if [ -f "$PBF_FILE" ]; then
   RELATION_COUNT=$(psql -h db -U openstreetmap -d openstreetmap -t -c "SELECT COUNT(*) FROM current_relations;" | xargs)
 
   if [ "$NODE_COUNT" -eq 0 ] && [ "$WAY_COUNT" -eq 0 ] && [ "$RELATION_COUNT" -eq 0 ]; then
-    echo "🔁 Change coordinate columns from INTEGER to BIGINT to support larger range..."
-    psql -h db -U openstreetmap -d openstreetmap -f /app/host/db/alter-columns.sql
-
     echo "🗺️ Importing OSM data from $PBF_FILE ..."
     osmosis \
       -verbose \

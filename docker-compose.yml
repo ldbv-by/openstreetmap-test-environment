@@ -44,21 +44,6 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
 
-  openstreetmap-schema:
-    build:
-      context: ./openstreetmap-schema
-    environment:
-      DATABASE_HOST: db
-      DATABASE_PORT: 5432
-      DATABASE: openstreetmap
-      DATABASE_USER: svc_openstreetmap_schema
-      DATABASE_PASSWORD: password
-    ports:
-      - "8081:8080"
-    depends_on:
-      - db
-      - web
-
 volumes:
   web-tmp:
   web-storage:
