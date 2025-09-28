@@ -29,7 +29,7 @@ openstreetmap-test-environment/
 1. **Repository klonen (inkl. Submodule):**
 
    ```bash
-   git clone --recurse-submodules https://github.com/ldbv-by/openstreetmap-test-environment.git
+   git clone --recurse-submodules -b adv https://github.com/ldbv-by/openstreetmap-test-environment.git
    cd openstreetmap-test-environment
    ```
 
