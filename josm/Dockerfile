@@ -22,8 +22,8 @@ COPY josm.jar /app/josm.jar
 COPY icons/josm-bvv.png /app/icons/josm-bvv.png
 COPY icons/imagery/ /app/icons/imagery/
 COPY presets/BasisDLM_BY_presets.zip /app/presets/
-COPY styles/BasisDLM_BY_styles.zip /app/styles/
-COPY styles/BasisDLM_BY_styles_transparent.zip /app/styles/
+COPY styles/AdV_styles.zip /app/styles/
+COPY styles/AdV_styles_transparent.zip /app/styles/
 COPY docker/.desktop /home/headless/Desktop/josm.desktop
 
 COPY docker/entrypoint.sh /app/docker/entrypoint.sh
