@@ -30,7 +30,15 @@ services:
       /tmp/pids/
     ports:
       - "3000:3000"
-    entrypoint: [ "/bin/sh", "-c", "dos2unix /app/host/docker/entrypoint.sh && /app/host/docker/entrypoint.sh" ]
+    entrypoint:
+      - /bin/sh
+      - -lc
+      - |
+        apt-get update \
+        && apt-get install -y --no-install-recommends dos2unix \
+        && rm -rf /var/lib/apt/lists/* \
+        && dos2unix /app/host/docker/entrypoint.sh \
+        && exec /app/host/docker/entrypoint.sh
     depends_on:
       - db
 
