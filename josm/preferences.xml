@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<preferences xmlns='http://josm.openstreetmap.de/preferences-1.0' version='19412'>
+<preferences xmlns='http://josm.openstreetmap.de/preferences-1.0' version='19439'>
   <list key='browser.unix'>
     <entry value='/usr/bin/firefox'/>
   </list>
   <tag key='cache.capabilities-452775794' value='1753707889'/>
   <tag key='cache.capabilities1028419983' value='1754398293'/>
-  <tag key='cache.motd.html' value='1754398275'/>
-  <tag key='cache.motd.html.java' value='17.0.15'/>
+  <tag key='cache.capabilities725218875' value='1761056113'/>
+  <tag key='cache.motd.html' value='1761055960'/>
+  <tag key='cache.motd.html.java' value='17.0.16'/>
   <tag key='cache.motd.html.lang' value='En:'/>
-  <tag key='cache.motd.html.version' value='19412'/>
+  <tag key='cache.motd.html.version' value='19439'/>
   <tag key='changesetdialog.lastHeight' value='0'/>
   <list key='clr.general.Relation: selected'>
     <entry value='#33FF33'/>
@@ -183,7 +184,7 @@
     <entry value='Mapbox'/>
     <entry value='standard'/>
   </list>
-  <tag key='josm.version' value='19412'/>
+  <tag key='josm.version' value='19439'/>
   <tag key='lastDirectory' value='/home/JOSM'/>
   <tag key='layerlist.lastHeight' value='121'/>
   <tag key='mappaint.renderer-class-name' value='org.openstreetmap.josm.data.osm.visitor.paint.StyledMapRenderer'/>
@@ -218,37 +219,44 @@
   <tag key='message.imagery.nagPanel.https://geoservices.bayern.de/od/wms/dtk/v1/dtk25?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dtk25&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}' value='false'/>
   <tag key='minimap.lastHeight' value='0'/>
   <list key='mirror.https://josm.openstreetmap.de/maps'>
-    <entry value='1754398289657'/>
+    <entry value='1761055965539'/>
     <entry value='/home/headless/.cache/JOSM/mirror_https___josm.openstreetmap.de_maps'/>
   </list>
   <list key='mirror.https://josm.openstreetmap.de/remote/geofabrik-index-v1-nogeom.json'>
-    <entry value='1754398276802'/>
+    <entry value='1761055961729'/>
     <entry value='/home/headless/.cache/JOSM/mirror_https___josm.openstreetmap.de_remote_geofabrik-index-v1-nogeom.json'/>
   </list>
   <tag key='multipoly.removeduplicateinnertags' value='false'/>
   <tag key='notes/note_open.lastHeight' value='0'/>
+  <tag key='oauth.access-token.object.OAuth20.openstreetmap-api-gateway' value='{&quot;access_token&quot;:&quot;_aLsyhc-pD30GOis33yipFDt6B2733hPoxY4go8-Nt4&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;created_at&quot;:1761056089,&quot;scope&quot;:&quot;&quot;}'/>
   <tag key='oauth.access-token.object.OAuth20.web' value='{&quot;access_token&quot;:&quot;_aLsyhc-pD30GOis33yipFDt6B2733hPoxY4go8-Nt4&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;created_at&quot;:1755107978,&quot;scope&quot;:&quot;read_gpx write_gpx read_prefs write_prefs write_api write_notes&quot;}'/>
-  <tag key='oauth.access-token.parameters.OAuth20.http://web:3000/api' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://web:3000/api&quot;,&quot;authorize_url&quot;:&quot;http://web:3000/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://web:3000/oauth2/token&quot;}'/>
+  <tag key='oauth.access-token.parameters.OAuth20.http://openstreetmap-api-gateway:8080/api' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api&quot;,&quot;authorize_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/token&quot;}'/>
   <tag key='oauth.access-token.parameters.OAuth20.https://api.openstreetmap.org/api' value='{&quot;client_id&quot;:&quot;edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;https://api.openstreetmap.org/api&quot;,&quot;authorize_url&quot;:&quot;https://www.openstreetmap.org/oauth2/authorize&quot;,&quot;token_url&quot;:&quot;https://www.openstreetmap.org/oauth2/token&quot;}'/>
-  <tag key='oauth.access-token.parameters.OAuth20.web' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://web:3000/api&quot;,&quot;authorize_url&quot;:&quot;http://web:3000/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://web:3000/oauth2/token&quot;}'/>
-  <tag key='oauth.settings.use-default' value='false'/>
+  <tag key='oauth.access-token.parameters.OAuth20.openstreetmap-api-gateway' value='{&quot;client_id&quot;:&quot;&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api&quot;,&quot;authorize_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api/authorize&quot;,&quot;token_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api/token&quot;}'/>
+  <tag key='oauth.access-token.parameters.OAuth20.web' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api&quot;,&quot;authorize_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/token&quot;}'/>
   <tag key='oauth.use-for-all-requests' value='false'/>
   <tag key='object_editor_icon.lastHeight' value='256'/>
   <tag key='object_editor_icon.visible' value='true'/>
   <tag key='org.openstreetmap.josm.gui.dialogs.DeleteFromRelationConfirmationDialog.geometry' value='x=760,y=420,width=400,height=200'/>
-  <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$AddTagsDialog.geometry' value='x=745,y=386,width=430,height=348'/>
+  <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$AddTagsDialog.geometry' value='x=745,y=386,width=430,height=254'/>
   <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$EditTagDialog.geometry' value='x=806,y=422,width=307,height=196'/>
   <tag key='org.openstreetmap.josm.gui.dialogs.relation.GenericRelationEditor.geometry' value='x=-901,y=143,width=746,height=596'/>
   <tag key='org.openstreetmap.josm.gui.download.DownloadDialog.geometry' value='x=226,y=41,width=1134,height=727'/>
   <tag key='org.openstreetmap.josm.gui.help.HelpBrowser.geometry' value='x=0,y=0,width=600,height=400'/>
-  <tag key='org.openstreetmap.josm.gui.io.UploadDialog.geometry' value='x=0,y=403,width=800,height=600'/>
-  <tag key='org.openstreetmap.josm.gui.preferences.PreferenceDialog.geometry' value='x=-32,y=156,width=1218,height=682'/>
+  <tag key='org.openstreetmap.josm.gui.io.UploadDialog.geometry' value='x=200,y=232,width=800,height=600'/>
+  <tag key='org.openstreetmap.josm.gui.oauth.OAuthAuthorizationWizard.geometry' value='x=426,y=338,width=1068,height=439'/>
+  <tag key='org.openstreetmap.josm.gui.preferences.PreferenceDialog.geometry' value='x=0,y=156,width=1218,height=682'/>
   <tag key='osm-download.bounds' value='49.8766612;12.336874;49.8833536;12.3479462'/>
   <tag key='osm-server.upload-strategy' value='singlerequest'/>
-  <tag key='osm-server.url' value='http://web:3000/api'/>
+  <tag key='osm-server.url' value='http://openstreetmap-api-gateway:8080/api'/>
+  <list key='osm-server.url-history'>
+    <entry value='http://openstreetmap-api-gateway:8080/api'/>
+    <entry value='https://api06.dev.openstreetmap.org/api'/>
+    <entry value='https://master.apis.dev.openstreetmap.org/api'/>
+  </list>
   <tag key='osm-server.username' value='test-user'/>
-  <tag key='pluginmanager.lastupdate' value='1753707886650'/>
-  <tag key='pluginmanager.version' value='19412'/>
+  <tag key='pluginmanager.lastupdate' value='1761055958245'/>
+  <tag key='pluginmanager.version' value='19439'/>
   <tag key='pluginmanager.version-based-update.policy' value='always'/>
   <list key='plugins'>
     <entry value='SelectionManager'/>
@@ -264,7 +272,6 @@
   </list>
   <tag key='preferences.reset.draw.rawgps.lines' value='true'/>
   <tag key='propertiesdialog.lastHeight' value='0'/>
-  <tag key='propertiesdialog.visible' value='false'/>
   <tag key='proxy.policy' value='no-proxy'/>
   <tag key='relationlist.lastHeight' value='0'/>
   <tag key='relationlist.visible' value='false'/>
@@ -277,7 +284,9 @@
   <tag key='selectionlist.visible' value='false'/>
   <list key='sensitive.keys'>
     <entry value='oauth.access-token.key'/>
+    <entry value='oauth.access-token.object.OAuth20.openstreetmap-api-gateway'/>
     <entry value='oauth.access-token.object.OAuth20.web'/>
+    <entry value='oauth.access-token.parameters.OAuth20.openstreetmap-api-gateway'/>
     <entry value='oauth.access-token.parameters.OAuth20.web'/>
     <entry value='oauth.access-token.secret'/>
     <entry value='osm-server.password'/>
@@ -292,7 +301,7 @@
   <tag key='sidetoolbar.hidden.dialogs/mapstyle' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/minimap' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/notes/note_open' value='true'/>
-  <tag key='sidetoolbar.hidden.dialogs/propertiesdialog' value='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/propertiesdialog' value='false'/>
   <tag key='sidetoolbar.hidden.dialogs/relationlist' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/selectionlist' value='true'/>
   <tag key='sidetoolbar.hidden.dialogs/userlist' value='true'/>
@@ -324,7 +333,18 @@
     <entry value='|'/>
     <entry value='mappaint/BasisDLM BY transparent'/>
   </list>
-  <tag key='upload.comment.last-used' value='1752151241'/>
+  <list key='upload.comment.history'>
+    <entry value='test'/>
+    <entry value=''/>
+  </list>
+  <tag key='upload.comment.last-used' value='1761056216'/>
+  <list key='upload.source.history'>
+    <entry value='test'/>
+    <entry value=''/>
+    <entry value='knowledge'/>
+    <entry value='survey'/>
+    <entry value='Bing'/>
+  </list>
   <tag key='userlist.lastHeight' value='0'/>
   <tag key='validator.TagChecker.checkComplex' value='false'/>
   <tag key='validator.TagChecker.checkComplexBeforeUpload' value='false'/>
