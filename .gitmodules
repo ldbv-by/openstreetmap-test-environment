@@ -1,3 +1,11 @@
 [submodule "openstreetmap-website/src"]
 	path = openstreetmap-website/src
 	url = https://github.com/openstreetmap/openstreetmap-website.git
+[submodule "openstreetmap-quality-framework"]
+	path = openstreetmap-quality-framework
+	url = https://github.com/ldbv-by/openstreetmap-quality-framework.git
+	branch = main
+[submodule "openstreetmap-api-gateway"]
+	path = openstreetmap-api-gateway
+	url = https://github.com/ldbv-by/openstreetmap-api-gateway.git
+	branch = main
