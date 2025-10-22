@@ -7,6 +7,7 @@ echo "🔧 Starting OpenStreetMap Website setup..."
 echo "📁 Copying example configuration files..."
 cp -r /app/host/config/* /app/config
 touch /app/config/settings.local.yml
+mv -f /app/config/id.js /app/app/assets/javascripts/
 
 # 2. Wait until the database is reachable
 echo "⏳ Waiting for the database to be ready..."
