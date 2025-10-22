@@ -252,7 +252,7 @@
         <entry value='https://api06.dev.openstreetmap.org/api'/>
         <entry value='https://master.apis.dev.openstreetmap.org/api'/>
     </list>
-    <tag key='osm-server.username' value='test-user'/>
+    <tag key='osm-server.username' value='josm-user'/>
     <tag key='pluginmanager.lastupdate' value='1761055958245'/>
     <tag key='pluginmanager.version' value='19439'/>
     <tag key='pluginmanager.version-based-update.policy' value='always'/>

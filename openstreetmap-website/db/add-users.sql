@@ -1,6 +1,7 @@
+/* JOSM User */
 INSERT
   INTO users (email, id, pass_crypt, creation_time, display_name, data_public, description, home_lat, home_lon, home_zoom, pass_salt, email_valid, new_email, languages, status, terms_agreed, consider_pd, auth_uid, preferred_editor, terms_seen, description_format, changesets_count, traces_count, diary_entries_count, image_use_gravatar, auth_provider, home_tile, tou_agreed, diary_comments_count, note_comments_count, creation_address, home_location_name, company)
-VALUES ('test-user@example.com', '2', '$argon2id$v=19$m=65536,t=3,p=4$zmdKaaMWo2SIjlf8DDpr1g$n3poh0ZWYsMOqwM1W+aVb5L/WKq5nDcM2wsSmgPy/BU', '2025-08-13T08:37:12.204033', 'test-user', 'true', '', NULL, NULL, '3', NULL, 'false', NULL, 'de-DE,de,en-US,en', 'confirmed', '2025-08-13T08:37:11.958249', 'false', NULL, NULL, 'true', 'markdown', '0', '0', '0', 'false', NULL, NULL, '2025-08-13T08:37:11.95828', '0', '0', '0.0.0.0', NULL, NULL);
+VALUES ('josm-user@example.com', '2', '$argon2id$v=19$m=65536,t=3,p=4$zmdKaaMWo2SIjlf8DDpr1g$n3poh0ZWYsMOqwM1W+aVb5L/WKq5nDcM2wsSmgPy/BU', '2025-08-13T08:37:12.204033', 'josm-user', 'true', '', NULL, NULL, '3', NULL, 'false', NULL, 'de-DE,de,en-US,en', 'confirmed', '2025-08-13T08:37:11.958249', 'false', NULL, NULL, 'true', 'markdown', '0', '0', '0', 'false', NULL, NULL, '2025-08-13T08:37:11.95828', '0', '0', '0.0.0.0', NULL, NULL);
 
 INSERT
   INTO oauth_applications (id, owner_type, owner_id, name, uid, secret, redirect_uri, scopes, confidential, created_at, updated_at)
@@ -13,3 +14,8 @@ VALUES ('1', '2', '1', 'sskjs28tYUh-6ZeUsuJHlq4_OUmRmWKzvVEK2w7MikI', '600', 'ht
 INSERT
   INTO oauth_access_tokens (id, resource_owner_id, application_id, token, refresh_token, expires_in, revoked_at, created_at, scopes, previous_refresh_token)
 VALUES ('1', '2', '1', '_aLsyhc-pD30GOis33yipFDt6B2733hPoxY4go8-Nt4', NULL, NULL, NULL, '2025-08-13T17:59:38.881453', 'read_gpx write_gpx read_prefs write_prefs write_api write_notes', '');
+
+/* iD User (+ OAuth2 will be done in entrypoint.sh) */
+INSERT
+  INTO users (email, id, pass_crypt, creation_time, display_name, data_public, description, home_lat, home_lon, home_zoom, pass_salt, email_valid, new_email, languages, status, terms_agreed, consider_pd, auth_uid, preferred_editor, terms_seen, description_format, changesets_count, traces_count, diary_entries_count, image_use_gravatar, auth_provider, home_tile, tou_agreed, diary_comments_count, note_comments_count, creation_address, home_location_name, company)
+VALUES ('iD-user@example.com', '3', '$argon2id$v=19$m=65536,t=3,p=4$zmdKaaMWo2SIjlf8DDpr1g$n3poh0ZWYsMOqwM1W+aVb5L/WKq5nDcM2wsSmgPy/BU', '2025-08-13T08:37:12.204033', 'iD-user', 'true', '', NULL, NULL, '3', NULL, 'false', NULL, 'de-DE,de,en-US,en', 'confirmed', '2025-08-13T08:37:11.958249', 'false', NULL, NULL, 'true', 'markdown', '0', '0', '0', 'false', NULL, NULL, '2025-08-13T08:37:11.95828', '0', '0', '0.0.0.0', NULL, NULL);

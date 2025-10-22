@@ -44,6 +44,10 @@ if [ -f "$PBF_FILE" ]; then
 
     echo "🔁 Resetting Postgres sequences..."
     psql -h db -U openstreetmap -d openstreetmap -f /app/host/db/reset-sequences.sql
+
+    echo "📝 Registering OAuth app for iD-user (safe to re-run)..."
+    rm -f /app/config/settings.local.yml
+    bundle exec rails "oauth:register_apps[iD-user]"
   else
     echo "⚠️ Database is not empty – skipping import."
   fi
@@ -51,6 +55,6 @@ else
   echo "⚠️ PBF file not found at $PBF_FILE – skipping import."
 fi
 
-# 5. Start the Rails server
+# 5) Rails-Server starten (PID 1)
 echo "🚀 Starting Rails server..."
-exec bundle exec rails s -p 3000 -b '0.0.0.0'
+exec bundle exec rails s -p 3000 -b 0.0.0.0
