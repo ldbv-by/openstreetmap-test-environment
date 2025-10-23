@@ -65,8 +65,8 @@ services:
     depends_on:
       - openstreetmap-quality-framework-db
     environment:
-      OSM_API_URL: http://web:3000/
-      OSM_QUALITY_FRAMEWORK_URL: http://openstreetmap-quality-framework:8080/
+      OSM_API_URL: http://web:3000
+      OSM_QUALITY_FRAMEWORK_URL: http://openstreetmap-quality-framework:8080
     volumes:
       - ./docker/data/pbf/data.osm.pbf:/app/import/data.osm.pbf:ro
 
@@ -98,6 +98,7 @@ services:
     depends_on:
       - openstreetmap-quality-framework-db
     environment:
+      OSM_API_URL: http://web:3000
       OSM_QUALITY_FRAMEWORK_DATABASE: osm_quality_framework
       OSM_QUALITY_FRAMEWORK_DATABASE_HOST: openstreetmap-quality-framework-db
       OSM_QUALITY_FRAMEWORK_DATABASE_PORT: 5432
