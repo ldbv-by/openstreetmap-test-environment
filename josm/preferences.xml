@@ -197,13 +197,13 @@
         </map>
         <map>
             <tag key='active' value='true'/>
-            <tag key='title' value='Ad'/>
-            <tag key='url' value='/app/styles/AdV_styles.zip'/>
+            <tag key='title' value='ATKIS(R) Basis-DLM'/>
+            <tag key='url' value='/app/styles/ATKIS_Basis-DLM_styles.zip'/>
         </map>
         <map>
             <tag key='active' value='false'/>
-            <tag key='title' value='AdV transparent'/>
-            <tag key='url' value='/app/styles/AdV_styles_transparent.zip'/>
+            <tag key='title' value='ATKIS(R) Basis-DLM (transparent)'/>
+            <tag key='url' value='/app/styles/ATKIS_Basis-DLM_styles_transparent.zip'/>
         </map>
     </maps>
     <list key='mappaint.style.known-defaults'>
