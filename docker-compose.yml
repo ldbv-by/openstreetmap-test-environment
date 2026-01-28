@@ -67,6 +67,7 @@ services:
     environment:
       OSM_API_URL: http://web:3000
       OSM_QUALITY_FRAMEWORK_URL: http://openstreetmap-quality-framework:8080
+      OSM_NOTIFICATION_SERVICE_URL: http://openstreetmap-notification-service:8080
     volumes:
       - ./docker/data/pbf/data.osm.pbf:/app/import/data.osm.pbf:ro
 
@@ -106,6 +107,24 @@ services:
       OSM_QUALITY_FRAMEWORK_DATABASE_PASSWORD: osm_quality_framework_pass
     volumes:
       - ./openstreetmap-quality-framework/docker/data/pbf/data.osm.pbf:/app/import/data.osm.pbf:ro
+
+  # OPENSTREETMAP NOTIFICATION SERVICE
+  openstreetmap-notification-service:
+    build:
+      context: ./openstreetmap-notification-service
+      dockerfile: docker/Dockerfile
+    container_name: openstreetmap-notification-service
+    ports:
+      - "8082:8080"
+    depends_on:
+      - openstreetmap-quality-framework-db
+    environment:
+      OSM_API_URL: http://web:3000
+      OSM_NOTIFICATION_SERVICE_DATABASE: osm_quality_framework
+      OSM_NOTIFICATION_SERVICE_DATABASE_HOST: openstreetmap-quality-framework-db
+      OSM_NOTIFICATION_SERVICE_DATABASE_PORT: 5432
+      OSM_NOTIFICATION_SERVICE_DATABASE_USERNAME: osm_quality_framework_user
+      OSM_NOTIFICATION_SERVICE_DATABASE_PASSWORD: osm_quality_framework_pass
 
 volumes:
   web-tmp:
