@@ -247,6 +247,7 @@
     <tag key='osm-download.bounds' value='49.8766612;12.336874;49.8833536;12.3479462'/>
     <tag key='osm-server.upload-strategy' value='singlerequest'/>
     <tag key='osm-server.url' value='http://openstreetmap-api-gateway:8080/api'/>
+    <tag key='openstreetmap-notification-service.url' value='http://openstreetmap-notification-service:8080/osm-notification-service'/>
     <list key='osm-server.url-history'>
         <entry value='http://openstreetmap-api-gateway:8080/api'/>
         <entry value='https://api06.dev.openstreetmap.org/api'/>
@@ -261,6 +262,10 @@
         <entry value='PolygonCutOut'/>
         <entry value='reltoolbox'/>
         <entry value='utilsplugin2'/>
+        <entry value='JTS'/>
+        <entry value='Jackson'/>
+        <entry value='WebFlux'/>
+        <entry value='NotificationManager'/>
     </list>
     <tag key='preferences.reset.draw.rawgps.lines' value='true'/>
     <tag key='propertiesdialog.lastHeight' value='304'/>
