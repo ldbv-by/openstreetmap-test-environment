@@ -126,6 +126,23 @@ services:
       OSM_NOTIFICATION_SERVICE_DATABASE_USERNAME: osm_quality_framework_user
       OSM_NOTIFICATION_SERVICE_DATABASE_PASSWORD: osm_quality_framework_pass
 
+  # OPENSTREETMAP PRESET SERVICE
+  openstreetmap-preset-service:
+    build:
+      context: ./openstreetmap-preset-service
+      dockerfile: docker/Dockerfile
+    container_name: openstreetmap-preset-service
+    ports:
+      - "8083:8080"
+    depends_on:
+      - openstreetmap-quality-framework-db
+    environment:
+      OSM_PRESET_SERVICE_DATABASE: osm_quality_framework
+      OSM_PRESET_SERVICE_DATABASE_HOST: openstreetmap-quality-framework-db
+      OSM_PRESET_SERVICE_DATABASE_PORT: 5432
+      OSM_PRESET_SERVICE_DATABASE_USERNAME: osm_quality_framework_user
+      OSM_PRESET_SERVICE_DATABASE_PASSWORD: osm_quality_framework_pass
+
 volumes:
   web-tmp:
   web-storage:

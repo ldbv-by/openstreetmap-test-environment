@@ -12,3 +12,6 @@
 [submodule "openstreetmap-notification-service"]
 	path = openstreetmap-notification-service
 	url = https://github.com/ldbv-by/openstreetmap-notification-service.git
+[submodule "openstreetmap-preset-service"]
+	path = openstreetmap-preset-service
+	url = https://github.com/ldbv-by/openstreetmap-preset-service.git
