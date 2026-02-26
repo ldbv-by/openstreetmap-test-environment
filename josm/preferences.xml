@@ -259,17 +259,22 @@
     <tag key='pluginmanager.lastupdate' value='1761055958245'/>
     <tag key='pluginmanager.version' value='19439'/>
     <tag key='pluginmanager.version-based-update.policy' value='always'/>
-    <list key='plugins'>
-        <entry value='SaveAsChangeset'/>
-        <entry value='PolygonCutOut'/>
-        <entry value='reltoolbox'/>
-        <entry value='utilsplugin2'/>
-        <entry value='JTS'/>
-        <entry value='Jackson'/>
-        <entry value='WebFlux'/>
-        <entry value='NotificationManager'/>
-        <entry value='ObjectEditor'/>
-        <entry value='SelectionManager'/>
+    <list key="plugins">
+        <entry value="Jackson"/>
+        <entry value="JTS"/>
+        <entry value="WebFlux"/>
+        <entry value="FileLog"/>
+        <entry value="Lombok"/>
+        <entry value="PolygonCutOut"/>
+        <entry value="ObjectEditor"/>
+        <entry value="SelectionManager"/>
+        <entry value="NotificationManager"/>
+        <entry value="PostgreSQL"/>
+        <entry value="Oracle"/>
+        <entry value="SaveAsChangeset"/>
+        <entry value="PolygonModifier"/>
+        <entry value="SerialSelection"/>
+        <entry value="BayernAtlas"/>
     </list>
     <tag key='preferences.reset.draw.rawgps.lines' value='true'/>
     <tag key='propertiesdialog.lastHeight' value='304'/>
@@ -312,24 +317,39 @@
         </map>
     </maps>
     <tag key='toggleDialogs.width' value='473'/>
-    <list key='toolbar'>
-        <entry value='open'/>
-        <entry value='save'/>
-        <entry value='download'/>
-        <entry value='upload'/>
-        <entry value='|'/>
-        <entry value='undo'/>
-        <entry value='redo'/>
-        <entry value='|'/>
-        <entry value='dialogs/search(searchExpression=)'/>
-        <entry value='preference'/>
-        <entry value='|'/>
-        <entry value='combineway'/>
-        <entry value='wayflip'/>
-        <entry value='|'/>
-        <entry value='imagery-offset'/>
-        <entry value='|'/>
-        <entry value='mappaint/BasisDLM BY transparent'/>
+    <list key="toolbar">
+        <entry value="open"/>
+        <entry value="save"/>
+        <entry value="download"/>
+        <entry value="upload"/>
+        <entry value="|"/>
+        <entry value="undo"/>
+        <entry value="redo"/>
+        <entry value="|"/>
+        <entry value="dialogs/search(searchExpression=)"/>
+        <entry value="preference"/>
+        <entry value="|"/>
+        <entry value="combineway"/>
+        <entry value="wayflip"/>
+        <entry value="|"/>
+        <entry value="imagery_DOP20 \(Farbe\)"/>
+        <entry value="imagery_Schummerung \(Schräglicht\)"/>
+        <entry value="mappaint/BasisDLM BY transparent"/>
+        <entry value="bayernAtlas"/>
+        <entry value="|"/>
+        <entry value="expandFace.png"/>
+        <entry value="takeOverFace.png"/>
+        <entry value="takeOverPolygon.png"/>
+        <entry value="reducePolygon.png"/>
+        <entry value="serialSelection"/>
+        <entry value="|"/>
+        <entry value="tagginggroup_41000 - Siedlung"/>
+        <entry value="tagginggroup_42000 - Verkehr"/>
+        <entry value="tagginggroup_43000 - Vegetation"/>
+        <entry value="tagginggroup_44000 - Gewässer"/>
+        <entry value="tagginggroup_50000 - Bauwerke\, Einrichtungen und sonstige Angaben"/>
+        <entry value="tagginggroup_60000 - Relief"/>
+        <entry value="tagginggroup_70000 - Gesetzliche Festlegungen\, Gebietseinheiten\, Kataloge"/>
     </list>
     <list key='upload.comment.history'>
         <entry value='test'/>
