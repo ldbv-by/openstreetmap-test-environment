@@ -5,9 +5,9 @@
     </list>
     <tag key='cache.capabilities-452775794' value='1753707889'/>
     <tag key='cache.capabilities1028419983' value='1754398293'/>
-    <tag key='cache.capabilities725218875' value='1761066780'/>
-    <tag key='cache.motd.html' value='1761066784'/>
-    <tag key='cache.motd.html.java' value='17.0.16'/>
+    <tag key='cache.capabilities725218875' value='1772113456'/>
+    <tag key='cache.motd.html' value='1772113459'/>
+    <tag key='cache.motd.html.java' value='17.0.18'/>
     <tag key='cache.motd.html.lang' value='En:'/>
     <tag key='cache.motd.html.version' value='19439'/>
     <tag key='changesetdialog.lastHeight' value='0'/>
@@ -186,7 +186,7 @@
     </list>
     <tag key='josm.version' value='19439'/>
     <tag key='lastDirectory' value='/home/JOSM'/>
-    <tag key='layerlist.lastHeight' value='130'/>
+    <tag key='layerlist.lastHeight' value='109'/>
     <tag key='mappaint.renderer-class-name' value='org.openstreetmap.josm.data.osm.visitor.paint.StyledMapRenderer'/>
     <maps key='mappaint.style.entries'>
         <map>
@@ -219,15 +219,17 @@
     <tag key='message.imagery.nagPanel.https://geoservices.bayern.de/od/wms/dtk/v1/dtk25?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=by_dtk25&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}' value='false'/>
     <tag key='minimap.lastHeight' value='0'/>
     <list key='mirror.https://josm.openstreetmap.de/maps'>
-        <entry value='1761066792078'/>
+        <entry value='1772113461942'/>
         <entry value='/home/headless/.cache/JOSM/mirror_https___josm.openstreetmap.de_maps'/>
     </list>
     <list key='mirror.https://josm.openstreetmap.de/remote/geofabrik-index-v1-nogeom.json'>
-        <entry value='1761066785739'/>
+        <entry value='1772113460235'/>
         <entry value='/home/headless/.cache/JOSM/mirror_https___josm.openstreetmap.de_remote_geofabrik-index-v1-nogeom.json'/>
     </list>
     <tag key='multipoly.removeduplicateinnertags' value='false'/>
     <tag key='notes/note_open.lastHeight' value='0'/>
+    <tag key='notification_manager_icon.lastHeight' value='354'/>
+    <tag key='notification_manager_icon.visible' value='true'/>
     <tag key='oauth.access-token.object.OAuth20.openstreetmap-api-gateway' value='{&quot;access_token&quot;:&quot;_aLsyhc-pD30GOis33yipFDt6B2733hPoxY4go8-Nt4&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;created_at&quot;:1761056089,&quot;scope&quot;:&quot;&quot;}'/>
     <tag key='oauth.access-token.object.OAuth20.web' value='{&quot;access_token&quot;:&quot;_aLsyhc-pD30GOis33yipFDt6B2733hPoxY4go8-Nt4&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;created_at&quot;:1755107978,&quot;scope&quot;:&quot;read_gpx write_gpx read_prefs write_prefs write_api write_notes&quot;}'/>
     <tag key='oauth.access-token.parameters.OAuth20.http://openstreetmap-api-gateway:8080/api' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api&quot;,&quot;authorize_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/token&quot;}'/>
@@ -235,6 +237,9 @@
     <tag key='oauth.access-token.parameters.OAuth20.openstreetmap-api-gateway' value='{&quot;client_id&quot;:&quot;&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api&quot;,&quot;authorize_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api/authorize&quot;,&quot;token_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api/token&quot;}'/>
     <tag key='oauth.access-token.parameters.OAuth20.web' value='{&quot;client_id&quot;:&quot;8GwVpTkVP6IInajsPZ3_d1PqXSMJGJFIWTbbdEOu1gM&quot;,&quot;redirect_uri&quot;:&quot;http://127.0.0.1:8111/oauth_authorization&quot;,&quot;api_url&quot;:&quot;http://openstreetmap-api-gateway:8080/api&quot;,&quot;authorize_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/authorize&quot;,&quot;client_secret&quot;:&quot;D3yIZPMcpfFcBG0yOhQYKOmGK6LHAKqjTtIb1Pkou0U&quot;,&quot;token_url&quot;:&quot;http://openstreetmap-api-gateway:8080/oauth2/token&quot;}'/>
     <tag key='oauth.use-for-all-requests' value='false'/>
+    <tag key='object_editor_icon.lastHeight' value='297'/>
+    <tag key='object_editor_icon.visible' value='true'/>
+    <tag key='openstreetmap-notification-service.url' value='http://openstreetmap-notification-service:8080/osm-notification-service'/>
     <tag key='org.openstreetmap.josm.gui.dialogs.DeleteFromRelationConfirmationDialog.geometry' value='x=760,y=420,width=400,height=200'/>
     <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$AddTagsDialog.geometry' value='x=745,y=386,width=430,height=254'/>
     <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$EditTagDialog.geometry' value='x=806,y=422,width=307,height=196'/>
@@ -247,43 +252,44 @@
     <tag key='osm-download.bounds' value='49.8766612;12.336874;49.8833536;12.3479462'/>
     <tag key='osm-server.upload-strategy' value='singlerequest'/>
     <tag key='osm-server.url' value='http://openstreetmap-api-gateway:8080/api'/>
-    <tag key='openstreetmap-notification-service.url' value='http://openstreetmap-notification-service:8080/osm-notification-service'/>
-    <tag key='openstreetmap-schema-server.url' value='http://openstreetmap-quality-framework:8080/osm-quality-framework/v1/osm-schema'/>
-    <tag key='openstreetmap-preset-service.url' value='http://openstreetmap-preset-service:8080/osm-preset-service/v1'/>
     <list key='osm-server.url-history'>
         <entry value='http://openstreetmap-api-gateway:8080/api'/>
         <entry value='https://api06.dev.openstreetmap.org/api'/>
         <entry value='https://master.apis.dev.openstreetmap.org/api'/>
     </list>
     <tag key='osm-server.username' value='josm-user'/>
-    <tag key='pluginmanager.lastupdate' value='1761055958245'/>
+    <tag key='pluginmanager.lastupdate' value='1772113452762'/>
     <tag key='pluginmanager.version' value='19439'/>
     <tag key='pluginmanager.version-based-update.policy' value='always'/>
-    <list key="plugins">
-        <entry value="Jackson"/>
-        <entry value="JTS"/>
-        <entry value="WebFlux"/>
-        <entry value="FileLog"/>
-        <entry value="Lombok"/>
-        <entry value="PolygonCutOut"/>
-        <entry value="ObjectEditor"/>
-        <entry value="SelectionManager"/>
-        <entry value="NotificationManager"/>
-        <entry value="PostgreSQL"/>
-        <entry value="Oracle"/>
-        <entry value="SaveAsChangeset"/>
-        <entry value="PolygonModifier"/>
-        <entry value="SerialSelection"/>
-        <entry value="BayernAtlas"/>
+    <list key='plugins'>
+        <entry value='Jackson'/>
+        <entry value='JTS'/>
+        <entry value='WebFlux'/>
+        <entry value='FileLog'/>
+        <entry value='Lombok'/>
+        <entry value='PolygonCutOut'/>
+        <entry value='ObjectEditor'/>
+        <entry value='SelectionManager'/>
+        <entry value='NotificationManager'/>
+        <entry value='PostgreSQL'/>
+        <entry value='Oracle'/>
+        <entry value='SaveAsChangeset'/>
+        <entry value='PolygonModifier'/>
+        <entry value='SerialSelection'/>
+        <entry value='BayernAtlas'/>
     </list>
     <tag key='preferences.reset.draw.rawgps.lines' value='true'/>
-    <tag key='propertiesdialog.lastHeight' value='304'/>
+    <tag key='propertiesdialog.lastHeight' value='110'/>
+    <tag key='propertiesdialog.visible' value='false'/>
     <tag key='proxy.policy' value='no-proxy'/>
-    <tag key='relationlist.lastHeight' value='497'/>
+    <tag key='relationlist.lastHeight' value='92'/>
+    <tag key='relationlist.visible' value='false'/>
     <tag key='reltoolbox.lastHeight' value='0'/>
     <tag key='reltoolbox.visible' value='false'/>
     <tag key='remotecontrol.permission.authorization' value='true'/>
-    <tag key='selectionlist.lastHeight' value='293'/>
+    <tag key='selection_manager_icon.lastHeight' value='172'/>
+    <tag key='selection_manager_icon.visible' value='true'/>
+    <tag key='selectionlist.lastHeight' value='0'/>
     <tag key='selectionlist.visible' value='false'/>
     <list key='sensitive.keys'>
         <entry value='oauth.access-token.key'/>
@@ -316,49 +322,49 @@
             <tag key='url' value='/app/presets/BasisDLM_BY_presets.zip'/>
         </map>
     </maps>
-    <tag key='toggleDialogs.width' value='473'/>
-    <list key="toolbar">
-        <entry value="open"/>
-        <entry value="save"/>
-        <entry value="download"/>
-        <entry value="upload"/>
-        <entry value="|"/>
-        <entry value="undo"/>
-        <entry value="redo"/>
-        <entry value="|"/>
-        <entry value="dialogs/search(searchExpression=)"/>
-        <entry value="preference"/>
-        <entry value="|"/>
-        <entry value="combineway"/>
-        <entry value="wayflip"/>
-        <entry value="|"/>
-        <entry value="imagery_DOP20 \(Farbe\)"/>
-        <entry value="imagery_Schummerung \(Schräglicht\)"/>
-        <entry value="mappaint/BasisDLM BY transparent"/>
-        <entry value="bayernAtlas"/>
-        <entry value="|"/>
-        <entry value="expandFace.png"/>
-        <entry value="takeOverFace.png"/>
-        <entry value="takeOverPolygon.png"/>
-        <entry value="reducePolygon.png"/>
-        <entry value="serialSelection"/>
-        <entry value="|"/>
-        <entry value="tagginggroup_41000 - Siedlung"/>
-        <entry value="tagginggroup_42000 - Verkehr"/>
-        <entry value="tagginggroup_43000 - Vegetation"/>
-        <entry value="tagginggroup_44000 - Gewässer"/>
-        <entry value="tagginggroup_50000 - Bauwerke\, Einrichtungen und sonstige Angaben"/>
-        <entry value="tagginggroup_60000 - Relief"/>
-        <entry value="tagginggroup_70000 - Gesetzliche Festlegungen\, Gebietseinheiten\, Kataloge"/>
+    <tag key='toggleDialogs.width' value='672'/>
+    <list key='toolbar'>
+        <entry value='open'/>
+        <entry value='save'/>
+        <entry value='download'/>
+        <entry value='upload'/>
+        <entry value='|'/>
+        <entry value='undo'/>
+        <entry value='redo'/>
+        <entry value='|'/>
+        <entry value='dialogs/search(searchExpression=)'/>
+        <entry value='preference'/>
+        <entry value='|'/>
+        <entry value='combineway'/>
+        <entry value='wayflip'/>
+        <entry value='|'/>
+        <entry value='imagery_DOP20 \(Farbe\)'/>
+        <entry value='imagery_Schummerung \(Schräglicht\)'/>
+        <entry value='mappaint/BasisDLM BY transparent'/>
+        <entry value='bayernAtlas'/>
+        <entry value='|'/>
+        <entry value='expandFace.png'/>
+        <entry value='takeOverFace.png'/>
+        <entry value='takeOverPolygon.png'/>
+        <entry value='reducePolygon.png'/>
+        <entry value='serialSelection'/>
+        <entry value='|'/>
+        <entry value='tagginggroup_41000 - Siedlung'/>
+        <entry value='tagginggroup_42000 - Verkehr'/>
+        <entry value='tagginggroup_43000 - Vegetation'/>
+        <entry value='tagginggroup_44000 - Gewässer'/>
+        <entry value='tagginggroup_50000 - Bauwerke\, Einrichtungen und sonstige Angaben'/>
+        <entry value='tagginggroup_60000 - Relief'/>
+        <entry value='tagginggroup_70000 - Gesetzliche Festlegungen\, Gebietseinheiten\, Kataloge'/>
     </list>
     <list key='upload.comment.history'>
-        <entry value='test'/>
         <entry value=''/>
+        <entry value='test'/>
     </list>
-    <tag key='upload.comment.last-used' value='1761056216'/>
+    <tag key='upload.comment.last-used' value='1772113499'/>
     <list key='upload.source.history'>
-        <entry value='test'/>
         <entry value=''/>
+        <entry value='test'/>
         <entry value='knowledge'/>
         <entry value='survey'/>
         <entry value='Bing'/>
