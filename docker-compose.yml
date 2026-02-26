@@ -89,10 +89,6 @@ services:
     build:
       context: ./openstreetmap-quality-framework
       dockerfile: docker/Dockerfile
-      args:
-        OSM2PGSQL_REPO_URL: https://github.com/osm2pgsql-dev/osm2pgsql.git
-        OSM2PGSQL_REPO_BRANCH: master
-        OSMOSIS_REPO_TAR: https://github.com/openstreetmap/osmosis/releases/download/0.49.2/osmosis-0.49.2.tar
     container_name: openstreetmap-quality-framework
     ports:
       - "8081:8080"
